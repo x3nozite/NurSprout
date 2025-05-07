@@ -1,3 +1,12 @@
+:root{
+    --darker-mint: #8AD4B9;
+    --orange: #FF7F50;
+    --orange-hover: #FF9D79;
+    --font-poppins-regular: 'Poppins', sans-serif;
+}
+
+
+
 .material-symbols-outlined {
     font-size: 24px;
     color: black;
