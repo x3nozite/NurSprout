@@ -1,0 +1,112 @@
+.material-symbols-outlined {
+    font-size: 24px;
+    color: black;
+    vertical-align: middle;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.aleo-regular {
+    font-family: "Aleo", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.anonymous-pro-bold {
+    font-family: "Anonymous Pro", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar ul{
+    overflow: hidden;
+    background-color: aliceblue;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li{
+    margin: 0px;
+    display: inline-block;
+}
+
+li a{
+    padding: 14px 24px;
+    text-decoration: none;
+    color:black;
+    transition: 0.3s;
+}
+
+li .nav-item:hover{
+    color: rgb(192, 164, 3);
+}
+
+#item-center{
+    margin-left: 100px;
+}
+
+#item-left{
+    padding: 8px;
+    transition: 0.3s;
+    
+}
+#item-left .nav-item{
+    color: white;
+    background-color:rgb(60, 82, 141);
+    border-radius: 5px;
+    margin:0px 8px;
+}
+
+#item-left:hover{
+    background-color: rgb(6, 26, 68);
+}
+
+#brand-name{
+    color: rgba(27, 38, 59, 1);
+    font-size: 24px;
+}
+
+#brand-highlight{
+    color: rgb(192, 164, 3);;
+}
+
+.footer{
+    margin: 16px 48px;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-part{
+    color: black;
+    text-decoration: none;
+    padding: 4px;
+}
