@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Vampiro+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet');
 :root{
     --darker-mint: #8AD4B9;
     --orange: #FF7F50;
@@ -31,15 +33,9 @@
     font-style: normal;
 }
 
-.aleo-regular {
-    font-family: "Aleo", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.anonymous-pro-bold {
-    font-family: "Anonymous Pro", monospace;
-    font-weight: 700;
+.plus-jakarta-sans-bold {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 800;
     font-style: normal;
 }
 
