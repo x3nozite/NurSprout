@@ -1,0 +1,10 @@
+#hero-container{
+    background-image: url("assets/hero-img.jpg");
+    height: 60vh;
+    background-size: cover;
+}
+
+h1{
+    font-size: 64px;
+    color: white;
+}
