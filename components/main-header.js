@@ -5,6 +5,7 @@ class Header extends HTMLElement{
     }
     connectedCallback(){
         this.shadowRoot.innerHTML = `
+        <link rel="stylesheet" href="../master.css"/>
         <link rel="stylesheet" href="/components/main-header.css"/>
         <div class="page-header">
             <div class="header-logo">
