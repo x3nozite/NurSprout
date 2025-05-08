@@ -5,9 +5,12 @@
     --orange: #FF7F50;
     --orange-hover: #FF9D79;
     --font-poppins-regular: 'Poppins', sans-serif;
+    --white: rgb(255, 255, 255);
 }
 
-
+h1, h2, h3, p{
+    margin: 0px;
+}
 
 .material-symbols-outlined {
     font-size: 24px;

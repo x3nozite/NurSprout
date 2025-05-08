@@ -1,7 +1,8 @@
 #hero-container{
-    background-image: url("assets/hero-img.jpg");
-    height: 60vh;
+    background-image: linear-gradient(to bottom, transparent, var(--white)), url("assets/hero-img.jpg");
     background-size: cover;
+
+    height: 80vh;
 }
 
 h1{
