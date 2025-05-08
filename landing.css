@@ -1,11 +1,20 @@
 #hero-container{
-    background-image: linear-gradient(to bottom, transparent 50%, var(--white) 100%),linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/hero-img.jpg");
+    background-image: linear-gradient(to bottom, transparent 70%, var(--background) 100%),linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/hero-img.jpg");
     background-size: cover;
-    height: 80vh;
+    background-position: center top 20%;
+    height: 75vh;
 }
 
 h1{
     font-size: 64px;
+}
+
+h2{
+    font-size: 48px;
+}
+
+h3{
+    font-size: 28px;
 }
 
 p{
@@ -23,4 +32,49 @@ p{
     flex-direction: column;
     align-items:  center;
     color: white;
+}
+
+#how-it-works{
+    padding: 10vw;
+    padding-top: 10vh;
+    color: var(--text-contrast);
+}
+
+#how-card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 128px 100px;
+}
+
+.how-card{
+    background-color: var(--dark-green);
+    border-radius: 12px;
+    padding: 32px 32px;
+    padding-top: 96px;
+    text-align: center;
+    color: white;
+    width: 13vw;
+    position: relative;
+}
+
+.how-card-icon{
+    background-color: var(--mint);
+    padding: 16px;
+    position: absolute;
+    top: -20%;
+    transform: translateX(-50%);
+    border-radius: 0.5rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.how-card-icon img {
+    width: 100px;
+    height: 100px;
+}
+
+.how-card p{
+    margin-top: 20px;
+    margin-bottom: 12px;
 }
