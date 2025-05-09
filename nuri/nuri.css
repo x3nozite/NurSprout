@@ -1,13 +1,13 @@
 .hover:hover{
     background-color: #ddd;
-    border-radius: 8px;
+    border-radius: 1vh 1vw;
 }
 
 .chatbot-content{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: fit-content;
+    height: 100%;
 }
 
 
@@ -15,10 +15,10 @@
     background-color: var(--lavender);
     display: flex;
     flex-direction: column;
-    padding: 16px 16px;
+    padding: 1vh 1vw;
     justify-content: space-between;
     width: fit-content;
-    height: 480px;
+    height: 100%;
 
 }
 
@@ -56,22 +56,22 @@
 }
 
 #qa-insight{
-    font-size: 14px;
+    font-size: 1rem;
     background-color: var(--green);
 }
 
 #qa-analyze{
-    font-size: 14px;
+    font-size: 1rem;
     background-color: var(--rose);
 }
 
 #qa-sleep{
-    font-size: 14px;
+    font-size: 1rem;
     background-color: var(--skyblue);
 }
 
 #qa-nutrition{
-    font-size: 14px;
+    font-size: 1rem;
     background-color: var(--orange);
 }
 
@@ -124,7 +124,7 @@
 
 .nuri-icons{
     width: fit-content;
-    padding: 8px 8px;
+    padding: 1vh 1vw;
     border-radius: 8px;
 }
 
@@ -132,7 +132,7 @@
     background: none;
     border: none;
     padding: 0%;
-    width: 100%;
+    width: 10vw;
 }
 
 .qa-nuri-buttons{
@@ -140,7 +140,7 @@
     flex-direction: row;
     background: none;
     border: none;
-    padding: 0px 8px;
+    padding: 0vh 0.5vw;
     padding-left: 0%;
     gap: 10px;
     align-items: center;
@@ -160,7 +160,7 @@
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 80px 200px;
+    padding: 50vh 20vw;
 }
 
 .nuri-chat{
