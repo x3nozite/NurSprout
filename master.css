@@ -63,6 +63,12 @@ p{
     font-style: normal;
 }
 
+.plus-jakarta-sans-semibold {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
 .plus-jakarta-sans-bold {
     font-family: "Plus Jakarta Sans", sans-serif;
     font-weight: 800;
