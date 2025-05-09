@@ -1,12 +1,13 @@
 .hover:hover{
     background-color: #ddd;
+    border-radius: 8px;
 }
 
 .chatbot-content{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 100%;
+    height: fit-content;
 }
 
 
@@ -16,13 +17,20 @@
     flex-direction: column;
     padding: 16px 16px;
     justify-content: space-between;
-    width: auto;
-    height: 800px;
+    width: fit-content;
+    height: 480px;
+
 }
 
-#closed-sidebar{ 
-    width: 10%;
+#opened-sidebar{
+    display: none;
+    width: 20%;
 }
+
+#closed-sidebar{
+    width: 5%;
+}
+
 
 .icon-container{
     display: flex;
@@ -47,7 +55,66 @@
     gap: 8px;
 }
 
+#qa-insight{
+    font-size: 14px;
+    background-color: var(--green);
+}
 
+#qa-analyze{
+    font-size: 14px;
+    background-color: var(--rose);
+}
+
+#qa-sleep{
+    font-size: 14px;
+    background-color: var(--skyblue);
+}
+
+#qa-nutrition{
+    font-size: 14px;
+    background-color: var(--orange);
+}
+
+/* Opened Sidebar */
+
+.history-title{
+    font-weight: bolder;
+}
+
+.chat-history-text{
+    font-size: 10px;
+    text-align: left;
+}
+
+
+.quick-action-row{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.chat-history-text:hover{
+    border-bottom: 0.5px solid black;
+
+}
+
+.chat-history{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+.account-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#account-icon{
+    padding-left: 0%;
+}
 
 .action-icon{
     display: flex;
@@ -58,13 +125,29 @@
 .nuri-icons{
     width: fit-content;
     padding: 8px 8px;
+    border-radius: 8px;
 }
 
 .nuri-buttons{
     background: none;
     border: none;
     padding: 0%;
+    width: 100%;
 }
+
+.qa-nuri-buttons{
+    display: flex;
+    flex-direction: row;
+    background: none;
+    border: none;
+    padding: 0px 8px;
+    padding-left: 0%;
+    gap: 10px;
+    align-items: center;
+    width: fit-content;
+}
+
+/* Bagian Chat */
 
 .nuri-history{
     background: none;

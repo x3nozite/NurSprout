@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../master.css">
     <link rel="stylesheet" href="nuri.css">
     <link rel="stylesheet" href="../components/main-header.css"/>
+    <script src="nuri.js"></script>
     <script defer src="../components/main-header.js"></script>
 </head>
 <body>
@@ -14,27 +15,59 @@
     <div class="chatbot-content">
         <div class="nuri-sidebar"  id="closed-sidebar">
             <div class="icon-container" id="closed-container">
-                <button class="nuri-buttons"><span class="material-symbols-outlined nuri-icons hover">left_panel_open</span></button>
+                <button class="nuri-buttons" onclick="sidebar_open()"><span class="material-symbols-outlined nuri-icons hover">left_panel_open</span></button>
                 <div class="action-icon">
                     <button class="nuri-buttons"><span class="material-symbols-outlined nuri-icons hover">search</span></button>
                     <button class="nuri-buttons"><span class="material-symbols-outlined nuri-icons hover">add_comment</span></button>
                 </div>
             </div>
             <div class="qa-container">
-                <button class="nuri-buttons"><span class="material-symbols-outlined nuri-icons hover">lightbulb</span></button>
-                <button class="nuri-buttons"><span class="material-symbols-outlined nuri-icons hover">biotech</span></button>
-                <button class="nuri-buttons"><span class="material-symbols-outlined nuri-icons hover">bedtime</span></button>
-                <button class="nuri-buttons"><span class="material-symbols-outlined nuri-icons hover">grocery</span></button>
+                <button class="nuri-buttons"><span class="material-symbols-outlined nuri-icons hover" id="qa-insight">lightbulb</span></button>
+                <button class="nuri-buttons"><span class="material-symbols-outlined nuri-icons hover" id="qa-analyze">biotech</span></button>
+                <button class="nuri-buttons"><span class="material-symbols-outlined nuri-icons hover" id="qa-sleep">bedtime</span></button>
+                <button class="nuri-buttons"><span class="material-symbols-outlined nuri-icons hover" id="qa-nutrition">grocery</span></button>
             </div>
             <span class="material-symbols-outlined nuri-icons hover">account_circle</span>
         </div>
-        <div class="nuri-sidebar">
+        <div class="nuri-sidebar" id="opened-sidebar">
             <div class="icon-container" id="main-container">
-                <button class="nuri-buttons"><span class="material-symbols-outlined nuri-icons hover">left_panel_close</span></button>
+                <button class="nuri-buttons" onclick="sidebar_close()"><span class="material-symbols-outlined nuri-icons hover">left_panel_close</span></button>
                 <div class="action-icon" id="main-ai-container"">
                     <button class="nuri-buttons"><span class="material-symbols-outlined nuri-icons hover">search</span></button>
                     <button class="nuri-buttons"><span class="material-symbols-outlined nuri-icons hover">add_comment</span></button>
                 </div>
+            </div>
+            <div class="quick-action-row">
+                <button class="qa-nuri-buttons hover"><span class="material-symbols-outlined nuri-icons" id="qa-insight">lightbulb</span><p><b>NuRI's Insight</b></p></button>
+                <button class="qa-nuri-buttons hover"><span class="material-symbols-outlined nuri-icons" id="qa-analyze">biotech</span><p><b>Quick Analyze</b></p></button>
+                <button class="qa-nuri-buttons hover"><span class="material-symbols-outlined nuri-icons" id="qa-sleep">bedtime</span><p><b>View Sleep Report</b></p></button>
+                <button class="qa-nuri-buttons hover"><span class="material-symbols-outlined nuri-icons" id="qa-nutrition">grocery</span><p><b>View Nutrition Reports</b></p></button>
+            </div>
+            <div class="chat-history">
+                <div class="history-row">
+                    <p class="history-title">Today</p>
+                    <button class="nuri-buttons chat-history-text">Baby's Insight: Today's Highlight</button>
+                </div>
+                <div class="history-row">
+                    <p class="history-title">Yesterday</p>
+                    <div class="history-text-container">
+                        <button class="nuri-buttons chat-history-text">Baby's Insight: Today's Highlight</button>
+                        <button class="nuri-buttons chat-history-text">Baby's Insight: Today's Highlight</button>
+                        <button class="nuri-buttons chat-history-text">Baby's Insight: Today's Highlight</button>
+                    </div>
+                </div>
+                <div class="history-row">
+                    <p class="history-title">Previous 7 Days</p>
+                    <div class="history-text-container">
+                        <button class="nuri-buttons chat-history-text">Baby's Insight: Today's Highlight</button>
+                        <button class="nuri-buttons chat-history-text">Baby's Insight: Today's Highlight</button>
+                        <button class="nuri-buttons chat-history-text">Baby's Insight: Today's Highlight</button>
+                    </div>
+                </div>
+            </div>
+            <div class="account-row hover">
+                <span class="material-symbols-outlined nuri-icons" id="account-icon">account_circle</span>
+                <p>Username</p>
             </div>
         </div>
         <div class="chat-container">
