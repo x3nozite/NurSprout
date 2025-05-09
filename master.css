@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Vampiro+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet');
 @import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Quicksand:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
 
 :root{
     --background: rgba(255, 237, 222, 1);
     --darker-mint: #8AD4B9;
     --orange: #FF7F50;
     --orange-hover: #FF9D79;
+    --lavender: #E6E6FA;
     --white: rgb(255, 255, 255);
     --dark-green: rgba(38, 93, 62, 1);
     --text-contrast: rgba(16, 66, 37, 1);
@@ -19,11 +21,23 @@ h1, h2, h3, p{
     margin: 0px;
 }
 
+h1{
+    font-family: var(--font-poppins-regular);
+    font-size: 48px;
+}
+
+p{
+    font-family: var(--font-poppins-regular);
+    font-weight: 300;
+    font-size: 12px;
+}
+
 .material-symbols-outlined {
     font-size: 24px;
     color: black;
     vertical-align: middle;
 }
+
 
 .poppins-regular {
     font-family: "Poppins", sans-serif;

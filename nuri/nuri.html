@@ -5,10 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../master.css">
+    <link rel="stylesheet" href="nuri.css">
     <link rel="stylesheet" href="../components/main-header.css"/>
     <script defer src="../components/main-header.js"></script>
 </head>
 <body>
     <main-header></main-header>
+    <div class="chatbot-content">
+        <div class="nuri-sidebar"  id="closed-sidebar">
+            <div class="icon-container" id="closed-container">
+                <button class="nuri-buttons"><span class="material-symbols-outlined nuri-icons hover">left_panel_open</span></button>
+                <div class="action-icon">
+                    <button class="nuri-buttons"><span class="material-symbols-outlined nuri-icons hover">search</span></button>
+                    <button class="nuri-buttons"><span class="material-symbols-outlined nuri-icons hover">add_comment</span></button>
+                </div>
+            </div>
+            <div class="qa-container">
+                <button class="nuri-buttons"><span class="material-symbols-outlined nuri-icons hover">lightbulb</span></button>
+                <button class="nuri-buttons"><span class="material-symbols-outlined nuri-icons hover">biotech</span></button>
+                <button class="nuri-buttons"><span class="material-symbols-outlined nuri-icons hover">bedtime</span></button>
+                <button class="nuri-buttons"><span class="material-symbols-outlined nuri-icons hover">grocery</span></button>
+            </div>
+            <span class="material-symbols-outlined nuri-icons hover">account_circle</span>
+        </div>
+        <div class="nuri-sidebar">
+            <div class="icon-container" id="main-container">
+                <button class="nuri-buttons"><span class="material-symbols-outlined nuri-icons hover">left_panel_close</span></button>
+                <div class="action-icon" id="main-ai-container"">
+                    <button class="nuri-buttons"><span class="material-symbols-outlined nuri-icons hover">search</span></button>
+                    <button class="nuri-buttons"><span class="material-symbols-outlined nuri-icons hover">add_comment</span></button>
+                </div>
+            </div>
+        </div>
+        <div class="chat-container">
+            <div class="nuri-chat">
+                    <div class="nuri-chat-text">
+                        <h1>NuRI Say's Hi!</h1>
+                        <p>Not sure where to start? Just tell NuRi what you need — a task, a question, or anything else — and NuRi will handle the rest!</p>
+                    </div>
+                    <div class="nuri-chat-buttons">
+
+                    </div>
+            </div>
+            <div class="nuri-textbox">
+
+            </div>
+        </div>
+
+
+    </div>
 </body>
 </html>
