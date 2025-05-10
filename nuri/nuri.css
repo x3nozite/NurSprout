@@ -15,16 +15,15 @@
     background-color: var(--lavender);
     display: flex;
     flex-direction: column;
-    padding: 1vh 1vw;
+    /* padding: 1vh 1vw; */
     justify-content: space-between;
-    width: fit-content;
     height: 100%;
 
 }
 
 #opened-sidebar{
     display: none;
-    width: 20%;
+    width: 10%;
 }
 
 #closed-sidebar{
@@ -132,7 +131,7 @@
     background: none;
     border: none;
     padding: 0%;
-    width: 10vw;
+    width: 100%;
 }
 
 .qa-nuri-buttons{

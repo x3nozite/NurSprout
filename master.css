@@ -33,7 +33,7 @@ h1, h2, h3, p{
 
 h1{
     font-family: var(--font-poppins-regular);
-    font-size: 3rem;
+    font-size: clamp(1.8rem, 10vw, 5em);
 }
 
 p{
