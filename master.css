@@ -20,6 +20,8 @@
     --font-poppins-regular: 'Poppins', sans-serif;
 }
 
+
+
 h1, h2, h3, p{
     margin: 0px;
 }
@@ -86,15 +88,17 @@ p{
 }
 
 body {
-  margin: 0px;
-  padding: 0px;
-  background-color: var(--background);
+    width: 100vw;   
+    height: 100dvh; 
+    margin: 0%;
+    padding: 0%;
+    background-color: var(--background);
 }
 
 ul{
     list-style-type: none;
-    margin: 0px;
-    padding: 0px;
+    margin: 0%;
+    padding: 0%;
 }
 
 .navbar ul{

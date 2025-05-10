@@ -3,31 +3,36 @@
     border-radius: 8px;
 }
 
+
+p{
+    font-size: 1em;
+}
+
 .chatbot-content{
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: fit-content;
+    height: 100dvh;
 }
 
 
 .nuri-sidebar{
+    overflow: auto;
     background-color: var(--lavender);
     display: flex;
     flex-direction: column;
-    padding: 16px 16px;
+    padding: 1rem;
     justify-content: space-between;
-    width: fit-content;
-    height: 480px;
 
 }
 
 #opened-sidebar{
     display: none;
     width: 20%;
+    max-width: 25%;
 }
 
 #closed-sidebar{
+    align-items: center;
     width: 5%;
 }
 
@@ -36,8 +41,8 @@
     display: flex;
     flex-direction: column;
     width: fit-content;
-    align-items: start;
-    gap: 16px;
+    justify-content: space-between;
+    gap: clamp(0.5rem, 1.5vh, 2rem);
 }
 
 #main-container{
@@ -52,26 +57,24 @@
 .qa-container{
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    width: fit-content;
+    gap: 2rem;
+    height: fit-content;
 }
 
 #qa-insight{
-    font-size: 14px;
     background-color: var(--green);
 }
 
 #qa-analyze{
-    font-size: 14px;
     background-color: var(--rose);
 }
 
 #qa-sleep{
-    font-size: 14px;
     background-color: var(--skyblue);
 }
 
 #qa-nutrition{
-    font-size: 14px;
     background-color: var(--orange);
 }
 
@@ -123,28 +126,29 @@
 }
 
 .nuri-icons{
-    width: fit-content;
-    padding: 8px 8px;
+    font-size: clamp(1.5em, 3vw, 2rem);
+    padding: 0.2em 0.2em;
     border-radius: 8px;
-}
+    }
 
 .nuri-buttons{
     background: none;
     border: none;
-    padding: 0%;
+    padding: 10% 10%;
     width: 100%;
 }
+
+
 
 .qa-nuri-buttons{
     display: flex;
     flex-direction: row;
     background: none;
     border: none;
-    padding: 0px 8px;
+    padding: 0 2em;
     padding-left: 0%;
-    gap: 10px;
+    gap: 0.5rem;
     align-items: center;
-    width: fit-content;
 }
 
 /* Bagian Chat */
