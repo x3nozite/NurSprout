@@ -105,6 +105,7 @@ p{
 #features-img{
     background-image: url("assets/feature-1.png");
     background-size: cover;
+    background-position: center;
     flex: 0 0 50%;
 }
 
