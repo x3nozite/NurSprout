@@ -38,11 +38,13 @@ p{
     padding: 10vw;
     padding-top: 10vh;
     color: var(--text-contrast);
+    box-sizing: border-box;
 }
 
 #how-card-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10vw, 1fr));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     row-gap: 10vh;
     column-gap: 2vw;
     padding: 16vh 4vw;
@@ -98,7 +100,7 @@ p{
 
 #features-container{
     flex: 0 0 50%;
-    padding: 6vh 0px;
+    padding: 4rem 0px;
     color: var(--text-contrast);
 }
 
@@ -121,4 +123,69 @@ p{
 
 .selected{
     border-color: var(--white);
+}
+
+#customer-testimony{
+    background-color: var(--blue);
+    box-sizing: border-box;
+    width: 100vw;
+    padding: 4rem 10rem;
+    padding-bottom: 6rem;
+}
+
+#customer-testimony-container{
+    display: flex;
+    flex-direction: row;
+}
+
+#testimony-title{
+    text-align: right;
+    padding: 0px 5vw;
+    padding-bottom: 2rem;
+}
+
+.testimony-container{
+    flex: 0 0 50%;
+    box-sizing: border-box;
+    padding: 0px 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.small-testimony, #big-testimony{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.picture-container img{
+    height: 6rem;
+    width: 6rem;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.testimony-text{
+    position: relative;
+    background-color: white;
+    border-radius: 5px;
+    width: 75%;
+    padding: 2rem 3rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.quote{
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+    font-size: 32px;
+}
+
+.customer-name{
+    font-size: 1rem;
+    font-style: italic;
 }
