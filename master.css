@@ -87,6 +87,12 @@ p{
     font-style: normal;
 }
 
+.quicksand-bold{
+    font-family: "Quicksand", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
 body {
     width: 100vw;   
     height: 100dvh; 
