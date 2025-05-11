@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../master.css">
+    <link rel="stylesheet" href="/master.css">
     <link rel="stylesheet" href="register.css">
-    <link rel="stylesheet" href="../components/main-header.css">
-    <script defer src="../components/main-header.js"></script>
+    <link rel="stylesheet" href="/components/main-header.css">
+    <script defer src="/components/main-header.js"></script>
 </head>
 <body>
     <main-header></main-header>
@@ -15,13 +15,13 @@
 
     <div id="form-wrapper">
         <div id="form-container">
-            <h2 class="quicksand-regular">Create an account</h2>
+            <h2 class="quicksand-regular">Login</h2>
             <form>
                 <div class="form-section">
                     <!--
                     <label for="email">Email Address</label>
                     -->
-                    <input type="email" name="email" placeholder="Email Address" class="quicksand-regular">
+                    <input type="text" name="email" placeholder="Email Address" class="quicksand-regular">
                 </div>
 
                 <div class="form-section">
@@ -31,18 +31,25 @@
                     <input type="password" name="password" placeholder="Password" class="quicksand-regular">
                 </div>
 
+                <div class="form-section" id="checkbox">
+                    <input type="checkbox" name="remember" id="remember">
+                </div>
+
                 <button type="submit" id="form-button" class="quicksand-bold">SIGN UP</button>
             </form>
 
-            <div>
-                <h3>Or</h3>
+            <div id="divider">
+                <span class="quicksand-bold">or</span>
             </div>
 
             <div id="sign-up-method">
-
+                <img src="/assets/Google.png">
+                <img src="/assets/Facebook.png">
+                <img src="/assets/Apple.png">
             </div>
-
-            <a href="register.html">Don't have an account yet?</a>
+            <div id="have-account">
+                <a href="register.html" class="quicksand-regular">Don't have an account?</a>
+            </div>
         </div>
     </div>
     
