@@ -94,7 +94,22 @@ a{
     padding-bottom: 0px;
 }
 
+#have-account:hover, #forget-password:hover{
+    text-decoration: underline var(--blue);
+}
+
 #checkbox, #remember{
     padding: 0px;
-    margin: 0px;
+}
+
+#checkbox{
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#remember{
+    width: auto;
 }
