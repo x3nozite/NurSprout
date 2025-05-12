@@ -21,17 +21,36 @@ p{
     font-size: 20px;
 }
 
+a{
+    text-decoration: none;
+}
+
 #hero-container{
     display: flex;
     justify-content: center;
 }
 
 #hero-title{
-    padding: 9vh 0px;
+    padding: 3rem 0px;
     display: flex;
     flex-direction: column;
     align-items:  center;
     color: white;
+}
+
+#cta-button{
+    background-color: var(--darker-mint);
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    border-radius: 5px;
+    color: var(--text-contrast);
+    transition: 0.2s;
+}
+
+#cta-button:hover{
+    background-color: #3b5c50;
+    color: var(--white);
 }
 
 #how-it-works{
@@ -65,7 +84,7 @@ p{
     background-color: var(--mint);
     padding: 1rem;
     position: absolute;
-    top: -20%;
+    top: -5rem;
     transform: translateX(-50%);
     border-radius: 0.5rem;
     display: inline-block;
@@ -164,6 +183,7 @@ p{
     width: 6rem;
     object-fit: cover;
     object-position: center top;
+    border-radius: 5px;
 }
 
 .testimony-text{
