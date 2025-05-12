@@ -3,7 +3,6 @@
     border-radius: 8px;
 }
 
-
 p{
     font-size: 1em;
 }
@@ -11,6 +10,7 @@ p{
 .chatbot-content{
     display: flex;
     flex-direction: row;
+    max-width: 75%;
     height: 100dvh;
 }
 
@@ -126,7 +126,7 @@ p{
 }
 
 .nuri-icons{
-    font-size: clamp(1.5em, 3vw, 2rem);
+    font-size: clamp(70%, 3vw, 2rem);
     padding: 0.2em 0.2em;
     border-radius: 8px;
     }
@@ -163,14 +163,41 @@ p{
 .chat-container{
     display: flex;
     align-items: center;
+    flex-direction: column;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
     width: 100%;
-    padding: 80px 200px;
+    max-width: 100%;
+    padding: 4rem 8rem;
 }
 
 .nuri-chat{
+    display: flex;
+    flex-direction: column;
     background-color: red;
     width: 100%;
+    align-items: center;
     text-align: center;
 }
 
+.nuri-chat p{
+    text-align: center;
+}
 
+.nuri-chat-buttons{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nuri-textbox{
+    width: 100%;
+}
+
+.nuri-textbox textarea{
+    width: 100%;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    field-sizing: content;
+}
