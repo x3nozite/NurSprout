@@ -23,6 +23,7 @@
 
 
 h1, h2, h3, p{
+    font-family: var(--font-poppins-regular);
     margin: 0px;
 }
 
