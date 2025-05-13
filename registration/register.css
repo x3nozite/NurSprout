@@ -114,7 +114,7 @@ a{
     width: auto;
 }
 
-#username-error, #password-error{
+#email-error, #password-error{
     font-size: 0.8rem;
     color: red;
 }

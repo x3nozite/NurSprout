@@ -3,19 +3,19 @@ const form = document.getElementById("form-register");
 form.addEventListener("submit", function(e){
     e.preventDefault();
 
-    const username = document.getElementById("username").value;
+    const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
 
-    let usernameError = document.getElementById("username-error")
+    let emailError = document.getElementById("email-error")
     let passwordError = document.getElementById("password-error")
 
-    usernameError.innerHTML = "";
+    emailError.innerHTML = "";
     passwordError.innerHTML = "";
 
     let errorFlag = false;
 
-    if(username == ""){
-        usernameError.innerHTML = "* Email is empty";
+    if(email == ""){
+        emailError.innerHTML = "* Email is empty";
         errorFlag = true;
     }
 
