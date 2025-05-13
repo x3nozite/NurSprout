@@ -305,3 +305,44 @@ body, html{
 .attach-button:hover{
     background-color: #ddd;
 }
+
+#chat-wrapper{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.chat-bubble{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 1.5rem;
+    background-color: var(--mint);
+    border-radius: 10px;
+}
+
+.chat-user{
+    background-color: var(--darker-mint);
+    padding-right: 1.5rem;
+    max-width: 50rem;
+    align-self: flex-end;
+}
+
+.chat-ai{
+    max-width: 80%;
+    align-self: flex-start;
+}
+
+.divider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0.5rem 0px;
+    border-bottom: 1px solid var(--text-contrast);
+}
+
+.chat-points{
+    margin-left: 1rem;
+}
