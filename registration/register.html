@@ -16,19 +16,21 @@
     <div id="form-wrapper">
         <div id="form-container">
             <h2 class="quicksand-regular">Sign Up</h2>
-            <form>
+            <form id="form-register">
                 <div class="form-section">
                     <!--
                     <label for="email">Email Address</label>
                     -->
-                    <input type="text" name="email" placeholder="Email Address" class="quicksand-regular">
+                    <input type="text" name="email" placeholder="Email Address" class="quicksand-regular" id="username">
+                    <span id="username-error"></span>
                 </div>
 
                 <div class="form-section">
                     <!--
                     <label for="password">Password</label>
                     -->
-                    <input type="password" name="password" placeholder="Password" class="quicksand-regular">
+                    <input type="password" name="password" placeholder="Password" class="quicksand-regular" id="password">
+                    <span id="password-error"></span>
                 </div>
 
                 <button type="submit" id="form-button" class="quicksand-bold">SIGN UP</button>
