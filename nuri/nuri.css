@@ -7,11 +7,18 @@ p{
     font-size: 1em;
 }
 
+body, html{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 .chatbot-content{
     display: flex;
     flex-direction: row;
-    max-width: 75%;
-    height: 100dvh;
+    flex: 1;
+    width: 100%;
+    height: auto;
 }
 
 
@@ -21,8 +28,9 @@ p{
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    height: auto;
+    overflow: hidden;
     justify-content: space-between;
-
 }
 
 #opened-sidebar{
@@ -166,9 +174,11 @@ p{
     flex-direction: column;
     overflow-wrap: break-word;
     box-sizing: border-box;
+    justify-content: space-between;
     width: 100%;
     max-width: 100%;
-    padding: 4rem 8rem;
+    padding: clamp(1.5rem, 5vw, 4rem) clamp(2rem, 8vw, 8rem);
+    overflow: hidden;
 }
 
 .nuri-chat{
@@ -184,20 +194,90 @@ p{
     text-align: center;
 }
 
-.nuri-chat-buttons{
+.nuri-chat-buttons-container{
     display: grid;
     grid-template-columns: auto auto;
+    gap: 16px;
     justify-content: space-between;
     width: 100%;
 }
 
+.nc-button{
+    display: inline-flex;
+    align-items: center;
+    background: none;
+    border: 1.5px solid black;
+    padding: 0.5rem 0.5rem;
+    font-size: 1.5rem;
+    width: fit-content;
+    max-width: 15em;
+    
+}
+
+.nc-button .material-symbols-outlined{
+    display: inline-block;
+    margin-right: 0.5em
+}
+
+.nc-button p{
+    font-size: 0.7em;
+}
+
 .nuri-textbox{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 1em 1em;
+    box-sizing: border-box;
     width: 100%;
+    background-color: white;
+    border-radius: 16px;
 }
 
 .nuri-textbox textarea{
+    font-family: var(--font-poppins-regular);
     width: 100%;
+    height: clamp(1em, 5vh, 3em);
     max-width: 100%;
+    padding: 0.5rem 0.5rem;
+    resize: none;
+    border: none;
+    background-color: transparent;
     overflow-wrap: break-word;
     field-sizing: content;
+}
+
+.nuri-textbox textarea:focus{
+    border: none;
+    outline: none;
+}
+
+.nuri-textbox hr.rounded{
+    border-top: 2px solid lavender;
+    width: 100%;
+    height: 0;
+    border-radius: 4px;
+}
+
+.textbox-qa{
+    display: inline-flex;
+    justify-content: flex-start;
+    gap: 1em;
+}
+
+.textbox-qa hr.rounded{
+    width: 2px;
+    height: 100%;
+}
+
+.attach-button{
+    border: none;
+    background-color: transparent;
+    display: inline-flex;
+    align-items: center;
+}
+
+
+.attach-button:hover{
+    background-color: #ddd;
 }

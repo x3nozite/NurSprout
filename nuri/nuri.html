@@ -76,15 +76,36 @@
                         <h1>NuRI Say's Hi!</h1>
                         <p>Not sure where to start? Just tell NuRi what you need — a task, a question, or anything else — and NuRi will handle the rest!</p>
                     </div>
-                    <div class="nuri-chat-buttons">
-                        <button>test</button>
-                        <button>test</button>
-                        <button>test</button>
-                        <button>test</button>  
+                    <div class="nuri-chat-buttons-container">
+                        <button class="nc-button">
+                            <span class="material-symbols-outlined nuri-icons" id="qa-insight">lightbulb</span>
+                            <p><b>NuRI'S Baby Insight</b></p>  
+                        </button>
+                        <button class="nc-button">
+                            <span class="material-symbols-outlined nuri-icons" id="qa-sleep">bedtime</span>
+                            <p><b>View Sleep Report</b></p>  
+                        </button>
+                        <button class="nc-button"><span class="material-symbols-outlined nuri-icons" id="qa-analyze">biotech</span>
+                            <p><b>Quick Analyze</b></p>  
+                        </button>
+                        <button class="nc-button"><span class="material-symbols-outlined nuri-icons" id="qa-nutrition">grocery</span>
+                            <p><b>View Nutrition Report</b></p>  
+                        </button>  
                     </div>
             </div>
             <div class="nuri-textbox">
-                 <textarea class="user-input" placeholder="Ask Anything..."></textarea> 
+                 <textarea class="user-input" placeholder="Ask Anything..."></textarea>
+                 <hr class="rounded">
+                 <div class="textbox-qa">
+                     <button class="attach-button">
+                         <span class="material-symbols-outlined nuri-icons">attach_file</span>
+                         <p>Attach File</p>
+                     </button>
+                     <button class="attach-button">
+                        <span class="material-symbols-outlined nuri-icons">add_photo_alternate</span>
+                        <p>Insert Image</p>
+                     </button> 
+                 </div>
             </div>
         </div>
 
