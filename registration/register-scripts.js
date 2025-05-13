@@ -15,10 +15,7 @@ form.addEventListener("submit", function(e){
     let errorFlag = false;
 
     if(username == ""){
-        usernameError.innerHTML = "* Username is empty";
-        errorFlag = true;
-    }else if(username.length < 4 || username.length > 16){
-        usernameError.innerHTML = "* Username must be 4 to 16 characters long";
+        usernameError.innerHTML = "* Email is empty";
         errorFlag = true;
     }
 
