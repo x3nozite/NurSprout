@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../master.css">
+    <link rel="stylesheet" href="nuri.css">
+    <link rel="stylesheet" href="../components/main-header.css"/>
+    <script src="nuri.js"></script>
+    <script defer src="../components/main-header.js"></script>
+</head>
+<body>
+    <main-header></main-header>
+    <div class="chatbot-content">
+        <div class="nuri-sidebar"  id="closed-sidebar">
+            <div class="icon-container" id="closed-container">
+                <button class="nuri-buttons" onclick="sidebar_open()"><span class="material-symbols-outlined nuri-icons hover">left_panel_open</span></button>
+                <div class="action-icon">
+                    <button class="nuri-buttons"><span class="material-symbols-outlined nuri-icons hover">search</span></button>
+                    <button class="nuri-buttons"><span class="material-symbols-outlined nuri-icons hover">add_comment</span></button>
+                </div>
+            </div>
+            <div class="qa-container">
+                <button class="nuri-buttons"><span class="material-symbols-outlined nuri-icons hover" id="qa-insight">lightbulb</span></button>
+                <button class="nuri-buttons"><span class="material-symbols-outlined nuri-icons hover" id="qa-analyze">biotech</span></button>
+                <button class="nuri-buttons"><span class="material-symbols-outlined nuri-icons hover" id="qa-sleep">bedtime</span></button>
+                <button class="nuri-buttons"><span class="material-symbols-outlined nuri-icons hover" id="qa-nutrition">grocery</span></button>
+            </div>
+            <span class="material-symbols-outlined nuri-icons hover">account_circle</span>
+        </div>
+        <div class="nuri-sidebar" id="opened-sidebar">
+            <div class="icon-container" id="main-container">
+                <button class="nuri-buttons" onclick="sidebar_close()"><span class="material-symbols-outlined nuri-icons hover">left_panel_close</span></button>
+                <div class="action-icon" id="main-ai-container">
+                    <button class="nuri-buttons"><span class="material-symbols-outlined nuri-icons hover">search</span></button>
+                    <button class="nuri-buttons"><span class="material-symbols-outlined nuri-icons hover">add_comment</span></button>
+                </div>
+            </div>
+            <div class="quick-action-row">
+                <button class="qa-nuri-buttons hover"><span class="material-symbols-outlined nuri-icons" id="qa-insight">lightbulb</span><p><b>NuRI's Insight</b></p></button>
+                <button class="qa-nuri-buttons hover"><span class="material-symbols-outlined nuri-icons" id="qa-analyze">biotech</span><p><b>Quick Analyze</b></p></button>
+                <button class="qa-nuri-buttons hover"><span class="material-symbols-outlined nuri-icons" id="qa-sleep">bedtime</span><p><b>View Sleep Report</b></p></button>
+                <button class="qa-nuri-buttons hover"><span class="material-symbols-outlined nuri-icons" id="qa-nutrition">grocery</span><p><b>View Nutrition Reports</b></p></button>
+            </div>
+            <div class="chat-history">
+                <div class="history-row">
+                    <p class="history-title">Today</p>
+                    <button class="nuri-buttons chat-history-text">Baby's Insight: Today's Highlight</button>
+                </div>
+                <div class="history-row">
+                    <p class="history-title">Yesterday</p>
+                    <div class="history-text-container">
+                        <button class="nuri-buttons chat-history-text">Baby's Insight: Today's Highlight</button>
+                        <button class="nuri-buttons chat-history-text">Baby's Insight: Today's Highlight</button>
+                        <button class="nuri-buttons chat-history-text">Baby's Insight: Today's Highlight</button>
+                    </div>
+                </div>
+                <div class="history-row">
+                    <p class="history-title">Previous 7 Days</p>
+                    <div class="history-text-container">
+                        <button class="nuri-buttons chat-history-text">Baby's Insight: Today's Highlight</button>
+                        <button class="nuri-buttons chat-history-text">Baby's Insight: Today's Highlight</button>
+                        <button class="nuri-buttons chat-history-text">Baby's Insight: Today's Highlight</button>
+                    </div>
+                </div>
+            </div>
+            <div class="account-row hover">
+                <span class="material-symbols-outlined nuri-icons" id="account-icon">account_circle</span>
+                <p>Username</p>
+            </div>
+        </div>
+        <div class="chat-container">
+            <div id="chat-wrapper">
+                <div class="chat-bubble chat-user">
+                    <p>View sleep report</p>
+                </div>
+
+                <div class="chat-bubble chat-ai">
+                    <h3>Berikut laporan tidur terbaru bayi Anda pada 3 Februari 2025:</h3>
+                    <div class="divider"></div>
+                    <p class="chat-points">🕒 Total tidur: 9 Jam 24 Menit</p>
+                    <p class="chat-points">🌙 Tidur malam: 9 Jam 24 Menit</p>
+                    <p class="chat-points">☀️ Tidur siang: -</p>
+                    <p class="chat-points">🔄 Bangun tengah malam: Tidak terjadi</p>
+                    <p class="chat-points">📈 Skor kualitas tidur: 90% (Sangat Baik!)</p>
+                    <p>Tidur bayi Anda sangat optimal tanpa gangguan! Pertahankan rutinitas tidur yang sudah baik ini untuk menjaga kualitas istirahatnya.</p> <br>
+                    <h3>Mau saya bantu dengan sesuatu?</h3>
+                    <div class="divider"></div>
+                    <p class="chat-points">1️. Lihat tren mingguan 📅 – Cek pola tidur selama seminggu terakhir</p>
+                    <p class="chat-points">2️. Dapatkan tips tidur 🌿 – Saran khusus untuk menjaga kualitas tidur tetap optimal</p>
+                    <p class="chat-points">3️. Catat tidur siang sekarang 😴 – Tambahkan tidur siang hari ini dengan cepat</p>
+                    <p>Beritahu saya jika butuh bantuan ya! 😊</p>
+                </div>
+            </div>
+            <div class="nuri-textbox">
+                 <textarea class="user-input" placeholder="Ask Anything..."></textarea>
+                 <hr class="rounded">
+                 <div class="textbox-qa">
+                     <button class="attach-button">
+                         <span class="material-symbols-outlined nuri-icons">attach_file</span>
+                         <p>Attach File</p>
+                     </button>
+                     <button class="attach-button">
+                        <span class="material-symbols-outlined nuri-icons">add_photo_alternate</span>
+                        <p>Insert Image</p>
+                     </button> 
+                 </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>
