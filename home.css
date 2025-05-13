@@ -1,0 +1,399 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container
+{
+    background-color: #162B62;
+    max-width: 1200px;
+    margin: 40px auto;
+    border-radius: 8px;
+}
+
+/* header */
+
+.header
+{
+    background-color: #1B46B5;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.name
+{
+    position: relative;
+    bottom: 10px;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.profile-picture
+{
+    background: #ccc;
+    border-radius: 15px;
+    padding: 45px;
+    margin: auto 20px;
+    position: relative;
+    bottom: 45px;
+}
+
+.sleep, .nutrition
+{
+    position: relative;
+    bottom: 10px;
+    border-radius: 10px;
+    width: 500px;
+    height: 10px;
+    margin: 10px auto;
+}
+
+.sleep-filler
+{
+    height: 100%;
+    width: 60%;
+    border-radius: 10px;
+    background-color: #295fe9;
+}
+
+.nutrition-filler
+{
+    height: 100%;
+    width: 30%;
+    border-radius: 10px;
+    background-color: #57AE21;
+}
+
+.sleep
+{
+    background: #ADBDE6;
+}
+
+.nutrition
+{
+    background: #C4EBAC;
+}
+
+.icons
+{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+span.material-symbols-outlined
+{
+    color: white;
+    font-size: 15px;
+    margin: 2px 10px;
+}
+
+.bar
+{
+    position: relative;
+    bottom: 10px;
+    background: blue;
+    border-radius: 10px;
+    width: 500px;
+    height: 10px;
+    margin: 10px auto;
+}
+
+/* food log  */
+
+.food-log-border
+{
+    width: 95%;
+    padding: 10px;
+    background-color: #1F3C85;
+    margin: 20px auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.food-log
+{
+    width: 100%;
+    height: 100%;
+    background-color: #162B62;
+    border-radius: 10px;
+    display: flex;
+}
+
+.food-input
+{
+    text-align: left;
+    vertical-align: top;
+    background: none;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 10px 0px 100px 20px;
+}
+
+.food-input:focus
+{
+    border: none;
+    outline: none;
+}
+
+.submit-log
+{
+    height: 20%;
+    background-color: #85F042;
+    border: none;
+    border-radius: 6px;
+    padding: 5px;
+    margin: 0px 5px 5px 0px;
+    position: relative;
+    top: 88px;
+}
+
+.submit-log:hover
+{
+    background-color: #52b813;
+}
+
+span#send
+{
+    color: black;
+    font-size: 20px;
+}
+
+/* sleep data and nutrition  */
+.sleep-container, .nutrition-intake
+{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    background-color: #1F3C85;
+    border-radius: 15px;
+}
+
+.sleep-panel, .bedtime-panel, .intake-panel, .nutrition-list
+{
+    border-radius: 15px;
+    width: 50%;
+    padding: 20px;
+}
+
+.row-flex
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.column-flex
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.toggles
+{
+    display: flex;
+    width: 90px;
+    background-color: #0B1737;
+    border-radius: 5px;
+    margin-left: 30%;
+}
+
+.Day7, .Day14, .Day30
+{
+    width: 30px;
+    border: none;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.Day7
+{
+    background-color: #7BA3FA;
+}
+
+.Day7:hover, .Day14:hover, .Day30:hover
+{
+    background-color: #789dec96;
+}
+
+.sleep-date, .nutrition-date
+{
+    font-size: 13px;
+    font-weight: 400;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.row-flex#nap
+{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.first-item, .second-item
+{
+    display: flex;
+}
+
+.bluecirc
+{
+    padding: 5px;
+    height: 10%;
+    background-color: #6CE4FF;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.whitecirc
+{
+    padding: 5px;
+    height: 10%;
+    background-color: #f1f3f3;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.yellowcirc
+{
+    padding: 5px;
+    height: 10%;
+    background-color: #FFCF67;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.sleep-graph, .bedtime-graph, .nutrition-intake-graph
+{
+    width: 100%;
+    height: 100%;
+}
+
+.bedtime-date
+{
+    font-size: 13px;
+    font-weight: 400;
+    margin: auto;
+    margin-top: 10px;
+}
+
+/* adjust sleep button */
+
+.adjust-sleep-time, .add-nutrition
+{
+    background-color: #1F3C85;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    align-self: center;
+}
+
+.adjust-sleep-time:hover, .add-nutrition:hover
+{
+    background-color: #254492;
+}
+
+span.material-symbols-outlined#adjust, span.material-symbols-outlined#nutrition
+{
+    margin: 0px 10px 0px 0px;
+}
+
+.adjust-text, .add-nutrition-text
+{
+    margin: auto;
+}
+
+/* Recommend  */
+.row-flex#recommend
+{
+    justify-content: left;
+}
+
+.rec
+{
+    margin: 10px 20px;
+}
+
+.rec-img
+{
+    width: 50px;
+    height: 45px;
+}
+
+.rec-txt
+{
+    margin: auto;
+    text-align: center;
+}
+
+/* nutrition list  */
+
+.nutrition-list 
+{
+    max-width: 400px;
+    margin: auto;
+}
+  
+.nutrition-list h2 
+{
+    margin-bottom: 20px;
+}
+
+.nutrient 
+{
+    margin-bottom: 15px;
+}
+
+.top-row 
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}  
+
+.bar-container 
+{
+    background-color: #f5eec0;
+    border-radius: 2px;
+    height: 10px;
+    overflow: hidden;
+}
+
+.bar-fill 
+{
+    background-color: orange;
+    height: 100%;
+    width: 0;
+}
+
+h1, h2, h3, p, li, span
+{
+    color: white;
+}
+
+h3
+{
+    font-weight: 600;
+}

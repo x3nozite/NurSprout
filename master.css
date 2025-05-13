@@ -22,7 +22,7 @@
 
 
 
-h1, h2, h3, p{
+h1, h2, h3, p, input, li, span{
     font-family: var(--font-poppins-regular);
     margin: 0px;
 }
