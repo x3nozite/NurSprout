@@ -1,38 +1,44 @@
 document.addEventListener("DOMContentLoaded", () => 
 {
+    function resetLocalStorage()
+    {
+        const nutrients = ["iron", "vitaminC", "calcium", "vitaminA", "zinc", "protein", "carbohydrates", "fats", "vitaminD"];
+
+        nutrients.forEach(nutrient => {
+            localStorage.setItem(nutrient, "0");
+        });
+
+        updateNutritionList([]);
+    }
+
     function updateNutritionList(log) {
-        // Example food nutrition data
         const foodNutrition = {
             banana: { iron: 0.3, vitaminC: 8, calcium: 5, vitaminA: 10, zinc: 0.1, protein: 1, carbohydrates: 27, fats: 0.3 },
             avocado: { iron: 0.6, vitaminC: 10, calcium: 18, vitaminA: 5, zinc: 0.2, protein: 2, carbohydrates: 12, fats: 15 },
             pumpkin: { iron: 0.8, vitaminC: 9, calcium: 10, vitaminA: 2, zinc: 0.3, protein: 2, carbohydrates: 8, fats: 0.1 }
         };
     
-        let totalNutrition = {
-            iron: 0,
-            vitaminC: 0,
-            vitaminD: 0,
-            calcium: 0,
-            vitaminA: 0,
-            zinc: 0,
-            protein: 0,
-            carbohydrates: 0,
-            fats: 0
-        };
+        const nutrients = ["iron", "vitaminC", "calcium", "vitaminA", "zinc", "protein", "carbohydrates", "fats", "vitaminD"];
     
+        let totalNutrition = {};
+
+        nutrients.forEach(nutrient => {
+            const value = localStorage.getItem(nutrient);
+            totalNutrition[nutrient] = isNaN(value) ? 0 : parseFloat(value);
+        });
+
         log.forEach(({ food, amount }) => {
             const key = food.toLowerCase();
             const data = foodNutrition[key];
-            if (data && amount) {
-                totalNutrition.iron += data.iron * amount;
-                totalNutrition.vitaminC += data.vitaminC * amount;
-                totalNutrition.calcium += data.calcium * amount;
-                totalNutrition.vitaminA += data.vitaminA * amount;
-                totalNutrition.zinc += data.zinc * amount;
-                totalNutrition.protein += data.protein * amount;
-                totalNutrition.carbohydrates += data.carbohydrates * amount;
-                totalNutrition.fats += data.fats * amount;
+            if (data && !isNaN(amount)) {
+                nutrients.forEach(nutrient => {
+                    totalNutrition[nutrient] += (data[nutrient] || 0) * amount;
+                });
             }
+        });
+
+        nutrients.forEach(nutrient => {
+            localStorage.setItem(nutrient, totalNutrition[nutrient].toString());
         });
     
         const nutritionTargets = {
@@ -40,6 +46,7 @@ document.addEventListener("DOMContentLoaded", () =>
             vitaminC: 50, 
             calcium: 260, 
             vitaminA: 500, 
+            vitaminD: 10,
             zinc: 5,
             protein: 11,
             carbohydrates: 95,
@@ -72,11 +79,34 @@ document.addEventListener("DOMContentLoaded", () =>
         const rawText = input.value.trim();
     
         if(!rawText) return;
+
+        //handle reset
+        if(rawText.toLowerCase() === "reset")
+        {
+            resetLocalStorage();
+            input.value = "";
+            return;
+        }
+
         const foods = rawText.split(",").map(item => item.trim());
+
+        //handles valid food
+        const validFood = [
+            "banana",
+            "avocado",
+            "pumpkin",
+        ];
     
         let valid = true;
         const logs = foods.map(entry => {
             const match = entry.match(/^(.+?)\s+([\d.]+)\s*(\w+)?$/);
+
+            if(!validFood.includes(match[1].toLowerCase()))
+            {
+                alert(match[1] + "is not in the list!")
+                valid = false;
+                return;
+            }
     
             if(match)
             {
@@ -108,4 +138,6 @@ document.addEventListener("DOMContentLoaded", () =>
             handleFoodLog();
         }
     });
+    
+    updateNutritionList([]);
 });
