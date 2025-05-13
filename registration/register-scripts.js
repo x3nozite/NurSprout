@@ -1,4 +1,37 @@
-document.getElementById("form-button").addEventListener("click", (e) =>{
+const form = document.getElementById("form-register");
+
+form.addEventListener("submit", function(e){
     e.preventDefault();
-    location.href = "/home.html";
+
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+
+    let usernameError = document.getElementById("username-error")
+    let passwordError = document.getElementById("password-error")
+
+    usernameError.innerHTML = "";
+    passwordError.innerHTML = "";
+
+    let errorFlag = false;
+
+    if(username == ""){
+        usernameError.innerHTML = "* Username is empty";
+        errorFlag = true;
+    }else if(username.length < 4 || username.length > 16){
+        usernameError.innerHTML = "* Username must be 4 to 16 characters long";
+        errorFlag = true;
+    }
+
+    if(password == ""){
+        passwordError.innerHTML = "* Password is empty";
+        errorFlag = true;
+    }else if(password.length < 8){
+        passwordError.innerHTML = "* Password must be at least 8 characters long";
+        errorFlag = true;
+    }
+
+
+    if(!errorFlag){
+        location.href = "/home.html";
+    }
 })
