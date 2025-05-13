@@ -11,7 +11,7 @@
 </head>
 <body>
     <main-header></main-header>
-
+    
     <div class="container">
         <!-- header -->
         <div class="header">
@@ -30,11 +30,11 @@
         <!-- food log -->
         <div class="food-log-border">
             <div class="food-log">
-                <input type="text" class="food-input" placeholder="Enter your food log here.. (ex: Banana 1tsp, Avocado 4tsp, ...)">
-                <button class="submit-log"><span class="material-symbols-outlined" id="send">send</span></button>
+                <input type="text" class="food-input" id="food-input" placeholder="Enter your food log here.. (ex: Banana 1tsp, Avocado 4tsp, ...)">
+                <button class="submit-log" id="submit-log"><span class="material-symbols-outlined" id="send">send</span></button>
             </div>
         </div>
-
+        
         <!-- sleep data  -->
         <div class="sleep-container">
             <div class="sleep-panel">
@@ -56,7 +56,7 @@
                                 <p>1h 35m</p>
                             </div>
                         </div>
-
+                        
                         <div class="second-item">
                             <div class="whitecirc"></div>
                             <div class="nap-avg">
@@ -72,7 +72,7 @@
                 <h3>Bedtime</h3>
                 <div class="column-flex">
                     <p class="bedtime-date">23 apr 2025 - 29 apr 2025</p>
-                        <div class="row-flex" id="nap">
+                    <div class="row-flex" id="nap">
                             <div class="first-item">
                                 <div class="yellowcirc"></div>
                                 <div class="nap-tot">
@@ -80,7 +80,7 @@
                                     <p>6:10 am</p>
                                 </div>
                             </div>
-    
+                            
                             <div class="second-item">
                                 <div class="bluecirc"></div>
                                 <div class="nap-avg">
@@ -93,13 +93,13 @@
                 </div>
             </div>
         </div>
-
+        
         <!-- adjust sleep time  -->
         <button class="adjust-sleep-time">
             <span class="material-symbols-outlined" id="adjust">nights_stay</span>
             <p class="adjust-text">Adjust Sleep Time</p>
         </button>
-
+        
         <!-- nutrition data  -->
         <div class="nutrition-intake">
             <div class="intake-panel">
@@ -121,7 +121,7 @@
                                 <p>87%</p>
                             </div>
                         </div>
-
+                        
                         <div class="second-item">
                             <div class="whitecirc"></div>
                             <div class="daily-avg">
@@ -131,7 +131,7 @@
                         </div>
                     </div>
                     <img class="nutrition-intake-graph" src="assets/NutritionIntake.jpeg" alt="graph">
-
+                    
                     <!-- food recommendation  -->
                     <h3>Sustainable Food Recommendation</h3>
                     <div class="row-flex" id="recommend">
@@ -153,104 +153,106 @@
             <div class="nutrition-list">
                 <h3>Nutrition List</h3>
 
-                <div class="nutrient">
+                <div class="nutrient" data-nutrient="iron">
                     <div class="top-row">
-                      <span>Iron</span>
-                      <span>1.1 / 11 mg</span>
-                      <span>10%</span>
+                        <span>Iron</span>
+                        <span>0 / 11 mg</span>
+                        <span>0%</span>
                     </div>
                     <div class="bar-container">
-                      <div class="bar-fill" style="width: 10%"></div>
+                        <div class="bar-fill" style="width: 0%"></div>
                     </div>
                 </div>
-                <div class="nutrient">
+                <div class="nutrient" data-nutrient="calcium">
                     <div class="top-row">
-                      <span>Calcium</span>
-                      <span>0 / 260 mg</span>
-                      <span>0%</span>
+                        <span>Calcium</span>
+                        <span>0 / 260 mg</span>
+                        <span>0%</span>
                     </div>
                     <div class="bar-container">
-                      <div class="bar-fill" style="width: 0%"></div>
+                        <div class="bar-fill" style="width: 0%"></div>
                     </div>
                 </div>
-                <div class="nutrient">
+                <div class="nutrient" data-nutrient="vitaminD">
                     <div class="top-row">
                       <span>Vitamin D</span>
                       <span>0 / 10 mcg</span>
                       <span>0%</span>
                     </div>
                     <div class="bar-container">
-                      <div class="bar-fill" style="width: 0%"></div>
+                        <div class="bar-fill" style="width: 0%"></div>
                     </div>
                 </div>
-                <div class="nutrient">
+                <div class="nutrient" data-nutrient="vitaminA">
                     <div class="top-row">
                       <span>Vitamin A</span>
                       <span>0 / 500 mcg</span>
                       <span>0%</span>
                     </div>
                     <div class="bar-container">
-                      <div class="bar-fill" style="width: 0%"></div>
+                        <div class="bar-fill" style="width: 0%"></div>
                     </div>
                 </div>
-                <div class="nutrient">
+                <div class="nutrient" data-nutrient="vitaminC">
                     <div class="top-row">
-                      <span>Vitamin C</span>
-                      <span>0 / 50 mg</span>
-                      <span>0%</span>
+                        <span>Vitamin C</span>
+                        <span>0 / 50 mg</span>
+                        <span>0%</span>
                     </div>
                     <div class="bar-container">
-                      <div class="bar-fill" style="width: 0%"></div>
+                        <div class="bar-fill" style="width: 0%"></div>
                     </div>
                 </div>
-                <div class="nutrient">
+                <div class="nutrient" data-nutrient="zinc">
                     <div class="top-row">
                       <span>Zinc</span>
                       <span>0 / 5 mg</span>
                       <span>0%</span>
                     </div>
                     <div class="bar-container">
-                      <div class="bar-fill" style="width: 0%"></div>
+                        <div class="bar-fill" style="width: 0%"></div>
                     </div>
                 </div>
-                <div class="nutrient">
+                <div class="nutrient" data-nutrient="protein">
                     <div class="top-row">
                       <span>Protein</span>
                       <span>0 / 11 g</span>
                       <span>0%</span>
                     </div>
                     <div class="bar-container">
-                      <div class="bar-fill" style="width: 0%"></div>
+                        <div class="bar-fill" style="width: 0%"></div>
                     </div>
                 </div>
-                <div class="nutrient">
+                <div class="nutrient" data-nutrient="carbohydrates">
                     <div class="top-row">
-                      <span>Carbohydrates</span>
-                      <span>0 / 95 g</span>
-                      <span>0%</span>
+                        <span>Carbohydrates</span>
+                        <span>0 / 95 g</span>
+                        <span>0%</span>
                     </div>
                     <div class="bar-container">
-                      <div class="bar-fill" style="width: 0%"></div>
+                        <div class="bar-fill" style="width: 0%"></div>
                     </div>
                 </div>
-                <div class="nutrient">
+                <div class="nutrient" data-nutrient="fats">
                     <div class="top-row">
                       <span>Fats</span>
                       <span>0 / 11 mg</span>
                       <span>0%</span>
                     </div>
                     <div class="bar-container">
-                      <div class="bar-fill" style="width: 0%"></div>
+                        <div class="bar-fill" style="width: 0%"></div>
                     </div>
                 </div>
             </div>
         </div>
-
+        
         <!-- Add nutrition  -->
         <button class="add-nutrition">
             <span class="material-symbols-outlined" id="nutrition">nutrition</span>
             <p class="add-nutrition-text">Add nutrition</p>
         </button>
     </div>
+
+    <script src="home.js"></script>
 </body>
 </html>
