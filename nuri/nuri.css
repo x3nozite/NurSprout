@@ -41,7 +41,7 @@ body, html{
 
 #closed-sidebar{
     align-items: center;
-    width: 5%;
+    width: min(12%, 4vw)
 }
 
 
@@ -134,7 +134,7 @@ body, html{
 }
 
 .nuri-icons{
-    font-size: clamp(70%, 3vw, 2rem);
+    font-size: clamp(1.5rem, 3vw, 2rem);
     padding: 0.2em 0.2em;
     border-radius: 8px;
     }
@@ -184,15 +184,17 @@ body, html{
 .nuri-chat{
     display: flex;
     flex-direction: column;
-    background-color: red;
-    width: 100%;
+    width: clamp(80vw, 80%, 90vw);
     align-items: center;
     text-align: center;
+    gap: clamp(1rem, 4vh, 2rem);
 }
 
 .nuri-chat p{
     text-align: center;
 }
+
+
 
 .nuri-chat-buttons-container{
     display: grid;
@@ -200,18 +202,27 @@ body, html{
     gap: 16px;
     justify-content: space-between;
     width: 100%;
+    padding: 0% clamp(0rem, 10%, 40rem);
+    box-sizing: border-box;
 }
 
 .nc-button{
     display: inline-flex;
     align-items: center;
-    background: none;
+    background: white;
     border: 1.5px solid black;
+    border-radius: 8px;
     padding: 0.5rem 0.5rem;
     font-size: 1.5rem;
-    width: fit-content;
-    max-width: 15em;
-    
+    width: 100%;
+}
+
+.nc-button:hover{
+    box-shadow: 0 2px 4px black;
+}
+
+.nc-button:active{
+    background: #ddd;
 }
 
 .nc-button .material-symbols-outlined{
@@ -232,6 +243,19 @@ body, html{
     width: 100%;
     background-color: white;
     border-radius: 16px;
+}
+
+.textbox{
+    display: inline-flex;
+    align-items: center;
+}
+
+.textbox #send-chat{
+    background-color: var(--green);
+}
+
+.textbox #send-chat:hover{
+    background-color: #A9F47B;
 }
 
 .nuri-textbox textarea{
