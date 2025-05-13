@@ -346,3 +346,8 @@ body, html{
 .chat-points{
     margin-left: 1rem;
 }
+
+a{
+    text-decoration: none;
+    color: black;
+}
