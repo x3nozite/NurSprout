@@ -78,11 +78,16 @@ document.addEventListener("DOMContentLoaded", () =>
     {
         const rawText = input.value.trim();
     
-        if(!rawText) return;
+        if(!rawText) 
+        {
+            alert("You haven't put anything on the food logger!");
+            return;
+        }
 
         //handle reset
         if(rawText.toLowerCase() === "reset")
         {
+            alert("Nutrition resetted!");
             resetLocalStorage();
             input.value = "";
             return;
@@ -123,8 +128,12 @@ document.addEventListener("DOMContentLoaded", () =>
         });
     
         console.log(logs);
-        if(valid === true) updateNutritionList(logs);
-        if(valid === true) input.value = "";
+        if(valid === true) 
+        {
+            alert("Food added!");
+            updateNutritionList(logs);
+            input.value = "";
+        }
     }
     
     const input = document.getElementById("food-input");
@@ -140,4 +149,24 @@ document.addEventListener("DOMContentLoaded", () =>
     });
     
     updateNutritionList([]);
+
+    //handle set sleep schedule
+    const sleepScheduleButton = document.getElementById("adjust-sleep-time");
+
+    function linkToSleepSchedule()
+    {
+        //link sendiri lah
+        window.location.href = "index.html"
+    }
+    sleepScheduleButton.addEventListener("click", linkToSleepSchedule);
+
+    //handle set nutrition button
+    const addNutritionButton = document.getElementById("add-nutrition");
+
+    function linkToAddNutrition()
+    {
+        window.location.href = "nutrition.html";
+    }
+    addNutritionButton.addEventListener("click", linkToAddNutrition);
+    
 });
