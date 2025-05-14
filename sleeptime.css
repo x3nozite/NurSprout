@@ -1,0 +1,50 @@
+.box{
+    margin: auto;
+    margin-top: 1.5rem;
+    width: 50rem; 
+    height: 30rem;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    background-color: #162B62;
+}
+
+#sleep{
+    margin: auto;
+    height: 30rem;
+    width: 50rem;
+    border-width: 12px;
+    border-style: solid;
+    border-radius: 8px;
+    border-color:#162B62;
+}
+.adjustbox
+{
+    position:relative;
+    bottom: 16rem;
+    margin: auto;
+    height: 5rem;
+    width: 24rem;
+    background-color: #1F3C85;
+    border-radius: 4px;
+}
+#sleeptext
+{
+    font-size: 1.2rem;
+}
+.button{
+    margin: auto;
+    color: white;
+}
+
+#confirm{
+    position: relative;
+    height: 4.2rem;
+    width: 24rem;
+    bottom:3rem;
+    color: white;
+    background-color: #1F3C85;
+    border-radius: 4px;
+    font-size: 1.2rem;
+}
+
