@@ -177,7 +177,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function linkToSleepSchedule() {
       //link sendiri lah
-      window.location.href = "index.html";
+      window.location.href = "sleeptime.html";
     }
     sleepScheduleButton.addEventListener("click", linkToSleepSchedule);
 

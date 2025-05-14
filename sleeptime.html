@@ -17,6 +17,24 @@
             <img id="sleep" src="/assets/sleep.png">
             <div class="adjustbox">
                 <h2 id="sleeptext">Adjust Baby Sleep Time</h2>
+
+                <div class="range">
+                    <div class="range-slider">
+                        <span class="range-selected"></span>
+                    </div>
+                    <div class="range-input">
+                        <input type="range" class="min" min="0" max="2400" value="600" step="100">
+                        <input type="range" class="max" min="0" max="2400" value="1200" step="100">
+                    </div>
+                    
+                    <div class="range-price">
+                        <label for="min">Start</label>
+                        <input type="number" name="min" value="600">
+                        <label for="max">End</label>
+                        <input type="number" name="max" value="1200">
+                    </div>
+                </div>
+
             </div>
             <div class="button">
                 <a href="home.html">
@@ -30,5 +48,6 @@
 
         
     </div>
+    <script src="sleeptime.js"></script>
 </body>
 </html>
