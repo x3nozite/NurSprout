@@ -24,7 +24,13 @@ document.addEventListener("DOMContentLoaded", () =>
 
         nutrients.forEach(nutrient => {
             const value = localStorage.getItem(nutrient);
-            totalNutrition[nutrient] = isNaN(value) ? 0 : parseFloat(value);
+            if(localStorage.getItem(nutrient) !== null)
+            {
+                totalNutrition[nutrient] = parseFloat(value);
+            }else{
+                totalNutrition[nutrient] = 0;
+            }
+            
         });
 
         log.forEach(({ food, amount }) => {
@@ -105,6 +111,13 @@ document.addEventListener("DOMContentLoaded", () =>
         let valid = true;
         const logs = foods.map(entry => {
             const match = entry.match(/^(.+?)\s+([\d.]+)\s*(\w+)?$/);
+            
+            if(match === null)
+            {
+                alert("your input is not valid!! (ex: Banana 1tsp, avocado 2tsp)");
+                valid = false;
+                return;
+            }
 
             if(!validFood.includes(match[1].toLowerCase()))
             {
@@ -121,7 +134,7 @@ document.addEventListener("DOMContentLoaded", () =>
                     unit: match[3]
                 };  
             }else{
-                alert("food input is not valid!!");
+                alert("your input is not valid!! (ex: Banana 1tsp, avocado 2tsp)");
                 valid = false;
                 return;
             }
