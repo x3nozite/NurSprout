@@ -1,0 +1,112 @@
+body{
+    background-color:#FFEDDE;
+}
+
+#return{
+    border-radius: 10px;
+    margin-left: 41%;
+    width: 214px;
+    height: 40px;
+}
+
+#back{
+    width: 214px;
+    height: 40px;
+    margin-left: 41%;
+}
+
+.buttons{
+    margin:auto;
+}
+
+button{
+    text-align: center;
+    background-color: #40D0A7;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #72BA9F;
+    margin-top: 10px;
+    margin-left: 32%;
+    margin-right: 32%;
+    width: 450px;
+    height: 66px;
+}
+
+h1{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+p{
+    font-size: 28px;
+    padding-left:50px;
+}
+
+.pfp{
+    margin-top: 50px;
+    width: 120px;
+    height: 120px;
+    border-style:solid;
+    border-radius: 100%;
+}
+
+#collab{    
+    width: 50px;
+    length: 50px;
+}
+#notif{
+    width: 45px;
+    length:45px ;
+}
+#theme{
+     width: 50px;
+    length:50px;
+}
+#acc{
+    width: 35px;
+    length:35px;
+}
+#help{
+     width: 50px;
+    length:50px;
+}
+
+.Name{
+    text-align: center;
+}
+
+.Title{
+    text-align: center;
+}
+
+.UserProfile{
+    position:absolute;
+    top:0px;
+    left:5%
+}
+
+#email{
+    text-decoration: underline;
+}
+
+.changes{
+    position: relative;
+    left: 300px;
+    bottom: 13rem;
+}
+
+.textbox{
+    display:flexbox;
+    text-align: left;
+    padding: 2px;
+    font-size: 24px;
+    width: 760px;
+    height: 400px;
+
+    background-color: white;
+    border-style: outset;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: black;
+    margin:auto;
+}

@@ -71,36 +71,31 @@
             </div>
         </div>
         <div class="chat-container">
-            <div class="nuri-chat">
-                    <div class="nuri-chat-text">
-                        <h1>NuRI Say's Hi!</h1>
-                        <p>Not sure where to start? Just tell NuRi what you need — a task, a question, or anything else — and NuRi will handle the rest!</p>
-                    </div>
-                    <div class="nuri-chat-buttons-container">
-                        <button class="nc-button">
-                            <span class="material-symbols-outlined nuri-icons" id="qa-insight">lightbulb</span>
-                            <p><b>NuRI'S Baby Insight</b></p>  
-                        </button>
-                        <a href="/nuri/sleep-report.html">
-                        <button class="nc-button">
-                            <span class="material-symbols-outlined nuri-icons" id="qa-sleep">bedtime</span>
-                            <p><b>View Sleep Report</b></p>  
-                        </button>
-                        </a>
-                        <button class="nc-button"><span class="material-symbols-outlined nuri-icons" id="qa-analyze">biotech</span>
-                            <p><b>Quick Analyze</b></p>  
-                        </button>
-                        <button class="nc-button"><span class="material-symbols-outlined nuri-icons" id="qa-nutrition">grocery</span>
-                            <p><b>View Nutrition Report</b></p>  
-                        </button>  
-                    </div>
+            <div id="chat-wrapper">
+                <div class="chat-bubble chat-user">
+                    <p>View sleep report</p>
+                </div>
+
+                <div class="chat-bubble chat-ai typewriter-multiline" id="typewriter">
+                    <h3>Berikut laporan tidur terbaru bayi Anda pada 3 Februari 2025:</h3>
+                    <p class="chat-points">🕒 Total tidur: 9 Jam 24 Menit</p>
+                    <p class="chat-points">🌙 Tidur malam: 9 Jam 24 Menit</p>
+                    <p class="chat-points">☀️ Tidur siang: -</p>
+                    <p class="chat-points">🔄 Bangun tengah malam: Tidak terjadi</p>
+                    <p class="chat-points">📈 Skor kualitas tidur: 90% (Sangat Baik!)</p>
+                    <p>Tidur bayi Anda sangat optimal tanpa gangguan! Pertahankan rutinitas tidur yang sudah baik ini untuk menjaga kualitas istirahatnya.</p>
+                    <h3>Mau saya bantu dengan sesuatu?</h3>
+                    <p class="chat-points">1️. Lihat tren mingguan 📅 – Cek pola tidur selama seminggu terakhir</p>
+                    <p class="chat-points">2️. Dapatkan tips tidur 🌿 – Saran khusus untuk menjaga kualitas tidur tetap optimal</p>
+                    <p class="chat-points">3️. Catat tidur siang sekarang 😴 – Tambahkan tidur siang hari ini dengan cepat</p>
+                    <p>Beritahu saya jika butuh bantuan ya! 😊</p>
+                </div>
             </div>
             <div class="nuri-textbox">
                 <div class="textbox">
                     <textarea class="user-input" placeholder="Ask Anything... (ex. View sleep report)"></textarea>
                     <a href="/nuri/sleep-report.html"><span class="material-symbols-outlined nuri-icons" id="send-chat">send</span></a> 
-                </div>
-                 <hr class="rounded">
+                </div>                 <hr class="rounded">
                  <div class="textbox-qa">
                      <button class="attach-button">
                          <span class="material-symbols-outlined nuri-icons">attach_file</span>
@@ -116,5 +111,6 @@
 
 
     </div>
+    <script src="text-animation.js"></script>
 </body>
 </html>
