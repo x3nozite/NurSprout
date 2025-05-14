@@ -140,4 +140,24 @@ document.addEventListener("DOMContentLoaded", () =>
     });
     
     updateNutritionList([]);
+
+    //handle set sleep schedule
+    const sleepScheduleButton = document.getElementById("adjust-sleep-time");
+
+    function linkToSleepSchedule()
+    {
+        //link sendiri lah
+        window.location.href = "index.html"
+    }
+    sleepScheduleButton.addEventListener("click", linkToSleepSchedule);
+
+    //handle set nutrition button
+    const addNutritionButton = document.getElementById("add-nutrition");
+
+    function linkToAddNutrition()
+    {
+        window.location.href = "nutrition.html";
+    }
+    addNutritionButton.addEventListener("click", linkToAddNutrition);
+    
 });
