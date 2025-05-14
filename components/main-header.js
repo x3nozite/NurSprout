@@ -15,6 +15,7 @@ class Header extends HTMLElement{
             <div class="menu-link">
                 <a href="../home.html">Home</a>
                 <a href="../nuri/nuri.html">NuRI</a>
+                <a href="../settings/Settings.html">Settings</a>
             </div>
             <div class="account-button">
                 <a href="/registration/register.html" id="sign-up">Sign Up</a>

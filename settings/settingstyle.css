@@ -15,10 +15,14 @@ body{
     margin-left: 41%;
 }
 
-.buttons{
-    margin:auto;
+.container
+{
+    display: flex;
+    flex-direction:column;
 }
-
+#edit{
+    margin-left: 31%;
+}
 button{
     text-align: center;
     background-color: #40D0A7;
@@ -26,10 +30,20 @@ button{
     border-style: solid;
     border-color: #72BA9F;
     margin-top: 10px;
-    margin-left: 32%;
-    margin-right: 32%;
     width: 450px;
     height: 66px;
+}
+button:hover{
+    background-color: #8AD4B9;
+}
+.buttons{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons :hover{
+    cursor: pointer;
 }
 
 h1{
@@ -51,23 +65,23 @@ p{
 }
 
 #collab{    
-    width: 50px;
+    width: 30px;
     length: 50px;
 }
 #notif{
-    width: 45px;
-    length:45px ;
+    width: 35px;
+    length:40px ;
 }
 #theme{
-     width: 50px;
+     width: 40px;
     length:50px;
 }
 #acc{
-    width: 35px;
-    length:35px;
+    width: 30px;
+    length:30px;
 }
 #help{
-     width: 50px;
+     width: 30px;
     length:50px;
 }
 
@@ -81,7 +95,7 @@ p{
 
 .UserProfile{
     position:absolute;
-    top:0px;
+    top:50px;
     left:5%
 }
 

@@ -4,53 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="settingstyle.css">
+    <link rel="stylesheet" href="/master.css">
+    <script defer src="/components/main-header.js"></script>
+    <link rel="stylesheet" href="/components/main-header.css">
     <title>NurSprout</title>
 </head>
-<body>    
-    <div class="Title">
-        <h1 class="Header">Settings</h1>
-    </div>
+<body>
+    <main-header></main-header>
+
+    <div class="container">
+        <div class="Title">
+            <h1 class="Header">Settings</h1>
+        </div>
+        
+        <div class="UserProfile">
+            <img class="pfp" src="/assets/pfp.png">
+            <h1 class="Name">Bob</h1>
+        </div>
+        
+        <div class="buttons">
+            <a>
+                <button>
+                    <img id="collab" src="/assets/collab.png">
+                    Collab
+                </button>
+            </a>
     
-    <div class="UserProfile">
-        <img class="pfp" src="/assets/pfp.png">
-        <h1 class="Name">Name</h1>
-    </div>
+            <a>
+                <button>
+                    <img id="notif" src="/assets/notif.png">
+                    Notification
+                </button>
+            </a>
     
-    <div class="buttons">
-        <a>
-            <button>
-                <img id="collab" src="/assets/collab.png">
-                Collab
-            </button>
-        </a>
-
-        <a>
-            <button>
-                <img id="notif" src="/assets/notif.png">
-                Notification
-            </button>
-        </a>
-
-        <a>
-            <button>
-                <img id="theme" src="/assets/themes.png">
-                Theme
-            </button>
-        </a>
-
-        <a href="/settings/acc-settings.html">
-             <button>
-                <img id="acc" src="/assets/acc.png">
-                Account Settings
-            </button>
-        </a>
-
-        <a>
-            <button>
-                <img id="help" src="/assets/help.png">
-                Help
-            </button>
-        </a>
+            <a>
+                <button>
+                    <img id="theme" src="/assets/themes.png">
+                    Theme
+                </button>
+            </a>
+    
+            <a href="/settings/acc-settings.html">
+                 <button>
+                    <img id="acc" src="/assets/acc.png">
+                    Account Settings
+                </button>
+            </a>
+    
+            <a>
+                <button>
+                    <img id="help" src="/assets/help.png">
+                    Help
+                </button>
+            </a>
+        </div>
     </div>
 </body>
 </html>
