@@ -56,3 +56,13 @@ window.addEventListener("load", () => {
   validateHour();
   validateMinute();
 });
+
+// Handle Confirm Button
+
+const confirmationButton = document.getElementById("confirm-button");
+
+function linkToHome() {
+  window.location.href = "home.html";
+}
+
+confirmationButton.addEventListener("click", linkToHome);

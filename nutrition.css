@@ -71,7 +71,7 @@ input[type="text"]::placeholder {
 .main-container {
   position: absolute;
   width: 850px;
-  height: 450px;
+  height: 32rem;
   left: 350px;
   top: 100px;
 
@@ -244,4 +244,25 @@ input[type="number"]::-webkit-outer-spin-button {
   border-color: white;
   width: 700px;
   margin-left: 0.5rem;
+}
+
+.confirm-button {
+  width: 10rem;
+  height: 3rem;
+  margin-top: 1rem;
+  margin-left: 40%;
+  border-radius: 10px;
+  border: none;
+  background-color: #40d0a7;
+}
+
+#confirm-button-text {
+  margin-left: 1.2rem;
+  margin-right: 1rem;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.confirm-button :hover {
+  cursor: pointer;
 }
