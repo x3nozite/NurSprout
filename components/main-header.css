@@ -29,7 +29,7 @@ img{
 }
 
 .header-logo:hover{
-    background-color: #ddd;
+    background-color: var(--button-hover);
 }
 
 .menu-link{
@@ -40,7 +40,7 @@ img{
 }
 
 .menu-link a:hover{
-    background-color: #ddd;
+    color: var(--background);
 }
 
 .account-button{
@@ -53,9 +53,6 @@ img{
     border-radius: 8px;
 }
 
-.account-button a:hover{
-    background-color: #ddd;
-}
 
 .account-button #login{
     color: white;
@@ -68,6 +65,10 @@ img{
     background: var(--orange-hover);
 }
 
+
+.account-button a#sign-up:hover{
+    color: var(--background);
+}
 
 
 
