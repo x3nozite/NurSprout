@@ -318,7 +318,7 @@ body, html{
     flex-direction: column;
     gap: 0.5rem;
     padding: 1rem 1.5rem;
-    background-color: var(--mint);
+    
     border-radius: 10px;
 }
 
@@ -334,15 +334,6 @@ body, html{
     align-self: flex-start;
 }
 
-.divider{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 0.5rem 0px;
-    border-bottom: 1px solid var(--text-contrast);
-}
-
 .chat-points{
     margin-left: 1rem;
 }
@@ -350,4 +341,15 @@ body, html{
 a{
     text-decoration: none;
     color: black;
+}
+
+.typewriter-multiline {
+  white-space: pre-wrap;
+}
+
+.chat-bubble h3{
+    border-bottom: 1px solid black;
+    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+    margin-bottom: 1rem;
 }
