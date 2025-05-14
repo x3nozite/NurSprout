@@ -26,7 +26,7 @@
         </div>
         <div class="item">
           <img src="./assets/avocado.jpg" alt="x" />
-          <p>avocado</p>
+          <p>Avocado</p>
         </div>
       </div>
     </div>
@@ -50,8 +50,40 @@
           </div>
         </div>
         <div class="right-container">
-          <div class="time">TIME 00:00 AM</div>
-          <div class="serving-size">Serving Size</div>
+          <div class="time">
+            <div class="label">TIME</div>
+            <input
+              id="hour"
+              type="number"
+              min="1"
+              max="12"
+              value="12"
+              inputmode="numeric"
+            />
+            <span class="separator">:</span>
+            <input
+              id="minute"
+              type="number"
+              min="0"
+              max="59"
+              value="00"
+              inputmode="numeric"
+            />
+            <span id="meridiem" class="time-part" role="button">AM</span>
+          </div>
+          <div class="serving-size">
+            Serving Size
+            <div class="serving-size-slider">
+              <input
+                type="range"
+                id="serving-slider"
+                min="1"
+                max="10"
+                value="1"
+              />
+              <span id="value">1</span>
+            </div>
+          </div>
         </div>
       </div>
       <div class="note">
@@ -67,5 +99,7 @@
         </div>
       </div>
     </div>
+
+    <script src="nutrition.js"></script>
   </body>
 </html>

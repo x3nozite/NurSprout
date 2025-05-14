@@ -1,258 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script defer src="/components/main-header.js"></script>
-    <link rel="stylesheet" href="/home.css">
-    <link rel="stylesheet" href="/master.css">
-    <link rel="stylesheet" href="/components/main-header.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/home.css" />
+    <link rel="stylesheet" href="/master.css" />
+    <link rel="stylesheet" href="/components/main-header.css" />
+  </head>
+  <body>
     <main-header></main-header>
-    
+
     <div class="container">
-        <!-- header -->
-        <div class="header">
-            <div class="profile-picture"></div>
-            <div class="icons">
-                <span class="material-symbols-outlined">nights_stay</span>
-                <span class="material-symbols-outlined">nutrition</span>
-            </div>
-            <div class="user-info">
-                <h2 class="name">Little Angel</h2>
-                <div class="sleep"><div class="sleep-filler"></div></div>
-                <div class="nutrition"><div class="nutrition-filler"></div></div>
-            </div>
+      <!-- header -->
+      <div class="header">
+        <div class="profile-picture"></div>
+        <div class="icons">
+          <span class="material-symbols-outlined">nights_stay</span>
+          <span class="material-symbols-outlined">nutrition</span>
         </div>
+        <div class="user-info">
+          <h2 class="name">Little Angel</h2>
+          <div class="sleep"><div class="sleep-filler"></div></div>
+          <div class="nutrition"><div class="nutrition-filler"></div></div>
+        </div>
+      </div>
 
-        <!-- food log -->
-        <div class="food-log-border">
-            <div class="food-log">
-                <input type="text" class="food-input" id="food-input" placeholder="Enter your food log here.. (ex: Banana 1tsp, Avocado 4tsp, ...)">
-                <button class="submit-log" id="submit-log"><span class="material-symbols-outlined" id="send">send</span></button>
-            </div>
+      <!-- food log -->
+      <div class="food-log-border">
+        <div class="food-log">
+          <input
+            type="text"
+            class="food-input"
+            id="food-input"
+            placeholder="Enter your food log here.. (ex: Banana 1tsp, Avocado 4tsp, ...)"
+          />
+          <button class="submit-log" id="submit-log">
+            <span class="material-symbols-outlined" id="send">send</span>
+          </button>
         </div>
-        
-        <!-- sleep data  -->
-        <div class="sleep-container">
-            <div class="sleep-panel">
-                <div class="row-flex">
-                    <h3>Sleep Trends</h3>
-                    <div class="toggles">
-                        <button class="Day7">7D</button>
-                        <button class="Day14">14D</button>
-                        <button class="Day30">30D</button>
-                    </div>
-                </div>
-                <div class="column-flex">
-                    <p class="sleep-date">23 apr 2025 - 29 apr 2025</p>
-                    <div class="row-flex" id="nap">
-                        <div class="first-item">
-                            <div class="bluecirc"></div>
-                            <div class="nap-tot">
-                                <p>Nap total avg</p>
-                                <p>1h 35m</p>
-                            </div>
-                        </div>
-                        
-                        <div class="second-item">
-                            <div class="whitecirc"></div>
-                            <div class="nap-avg">
-                                <p>Daily nap avg</p>
-                                <p>2h 3m</p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="sleep-graph" src="assets/SleepTrendsGraph.jpeg" alt="graph">
-                </div>
-            </div>
-            <div class="bedtime-panel">
-                <h3>Bedtime</h3>
-                <div class="column-flex">
-                    <p class="bedtime-date">23 apr 2025 - 29 apr 2025</p>
-                    <div class="row-flex" id="nap">
-                            <div class="first-item">
-                                <div class="yellowcirc"></div>
-                                <div class="nap-tot">
-                                    <p>Typical morning rise</p>
-                                    <p>6:10 am</p>
-                                </div>
-                            </div>
-                            
-                            <div class="second-item">
-                                <div class="bluecirc"></div>
-                                <div class="nap-avg">
-                                    <p>Typical Bedtime</p>
-                                    <p>8:12 pm</p>
-                                </div>
-                            </div>
-                        </div>
-                    <img class="bedtime-graph" src="/assets/BedtimeGraph.jpeg" alt="">
-                </div>
-            </div>
-        </div>
-        
-        <!-- adjust sleep time  -->
-        <button class="adjust-sleep-time" id="adjust-sleep-time">
-            <span class="material-symbols-outlined" id="adjust">nights_stay</span>
-            <p class="adjust-text">Adjust Sleep Time</p>
-        </button>
-        
-        <!-- nutrition data  -->
-        <div class="nutrition-intake">
-            <div class="intake-panel">
-                <div class="row-flex">
-                    <h3>Nutrition Intake</h3>
-                    <div class="toggles">
-                        <button class="Day7">7D</button>
-                        <button class="Day14">14D</button>
-                        <button class="Day30">30D</button>
-                    </div>
-                </div>
-                <div class="column-flex">
-                    <p class="nutrition-date">23 apr 2025 - 29 apr 2025</p>
-                    <div class="row-flex" id="nap">
-                        <div class="first-item">
-                            <div class="yellowcirc"></div>
-                            <div class="nutrition-avg">
-                                <p>Nutrition intake avg</p>
-                                <p>87%</p>
-                            </div>
-                        </div>
-                        
-                        <div class="second-item">
-                            <div class="whitecirc"></div>
-                            <div class="daily-avg">
-                                <p>Daily Intake avg</p>
-                                <p>93%</p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="nutrition-intake-graph" src="assets/NutritionIntake.jpeg" alt="graph">
-                    
-                    <!-- food recommendation  -->
-                    <h3>Sustainable Food Recommendation</h3>
-                    <div class="row-flex" id="recommend">
-                        <div class="rec">
-                            <img class="rec-img" src="assets/avocado.jpg" alt="">
-                            <p class="rec-txt">Avocado</p>
-                        </div>
-                        <div class="rec">
-                            <img class="rec-img" src="assets/banana.jpeg" alt="">
-                            <p class="rec-txt">Banana</p>
-                        </div>
-                        <div class="rec">
-                            <img class="rec-img" src="assets/pumpkin.webp" alt="">
-                            <p class="rec-txt">Pumpkin</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="nutrition-list">
-                <h3>Nutrition List</h3>
+      </div>
 
-                <div class="nutrient" data-nutrient="iron">
-                    <div class="top-row">
-                        <span>Iron</span>
-                        <span>0 / 11 mg</span>
-                        <span>0%</span>
-                    </div>
-                    <div class="bar-container">
-                        <div class="bar-fill" style="width: 0%"></div>
-                    </div>
-                </div>
-                <div class="nutrient" data-nutrient="calcium">
-                    <div class="top-row">
-                        <span>Calcium</span>
-                        <span>0 / 260 mg</span>
-                        <span>0%</span>
-                    </div>
-                    <div class="bar-container">
-                        <div class="bar-fill" style="width: 0%"></div>
-                    </div>
-                </div>
-                <div class="nutrient" data-nutrient="vitaminD">
-                    <div class="top-row">
-                      <span>Vitamin D</span>
-                      <span>0 / 10 mcg</span>
-                      <span>0%</span>
-                    </div>
-                    <div class="bar-container">
-                        <div class="bar-fill" style="width: 0%"></div>
-                    </div>
-                </div>
-                <div class="nutrient" data-nutrient="vitaminA">
-                    <div class="top-row">
-                      <span>Vitamin A</span>
-                      <span>0 / 500 mcg</span>
-                      <span>0%</span>
-                    </div>
-                    <div class="bar-container">
-                        <div class="bar-fill" style="width: 0%"></div>
-                    </div>
-                </div>
-                <div class="nutrient" data-nutrient="vitaminC">
-                    <div class="top-row">
-                        <span>Vitamin C</span>
-                        <span>0 / 50 mg</span>
-                        <span>0%</span>
-                    </div>
-                    <div class="bar-container">
-                        <div class="bar-fill" style="width: 0%"></div>
-                    </div>
-                </div>
-                <div class="nutrient" data-nutrient="zinc">
-                    <div class="top-row">
-                      <span>Zinc</span>
-                      <span>0 / 5 mg</span>
-                      <span>0%</span>
-                    </div>
-                    <div class="bar-container">
-                        <div class="bar-fill" style="width: 0%"></div>
-                    </div>
-                </div>
-                <div class="nutrient" data-nutrient="protein">
-                    <div class="top-row">
-                      <span>Protein</span>
-                      <span>0 / 11 g</span>
-                      <span>0%</span>
-                    </div>
-                    <div class="bar-container">
-                        <div class="bar-fill" style="width: 0%"></div>
-                    </div>
-                </div>
-                <div class="nutrient" data-nutrient="carbohydrates">
-                    <div class="top-row">
-                        <span>Carbohydrates</span>
-                        <span>0 / 95 g</span>
-                        <span>0%</span>
-                    </div>
-                    <div class="bar-container">
-                        <div class="bar-fill" style="width: 0%"></div>
-                    </div>
-                </div>
-                <div class="nutrient" data-nutrient="fats">
-                    <div class="top-row">
-                      <span>Fats</span>
-                      <span>0 / 11 mg</span>
-                      <span>0%</span>
-                    </div>
-                    <div class="bar-container">
-                        <div class="bar-fill" style="width: 0%"></div>
-                    </div>
-                </div>
+      <!-- sleep data  -->
+      <div class="sleep-container">
+        <div class="sleep-panel">
+          <div class="row-flex">
+            <h3>Sleep Trends</h3>
+            <div class="toggles">
+              <button class="Day7">7D</button>
+              <button class="Day14">14D</button>
+              <button class="Day30">30D</button>
             </div>
+          </div>
+          <div class="column-flex">
+            <p class="sleep-date">23 apr 2025 - 29 apr 2025</p>
+            <div class="row-flex" id="nap">
+              <div class="first-item">
+                <div class="bluecirc"></div>
+                <div class="nap-tot">
+                  <p>Nap total avg</p>
+                  <p>1h 35m</p>
+                </div>
+              </div>
+
+              <div class="second-item">
+                <div class="whitecirc"></div>
+                <div class="nap-avg">
+                  <p>Daily nap avg</p>
+                  <p>2h 3m</p>
+                </div>
+              </div>
+            </div>
+            <img
+              class="sleep-graph"
+              src="assets/SleepTrendsGraph.jpeg"
+              alt="graph"
+            />
+          </div>
         </div>
-        
-        <!-- Add nutrition  -->
-        <button class="add-nutrition" id="add-nutrition">
-            <span class="material-symbols-outlined" id="nutrition">nutrition</span>
-            <p class="add-nutrition-text">Add nutrition</p>
-        </button>
+        <div class="bedtime-panel">
+          <h3>Bedtime</h3>
+          <div class="column-flex">
+            <p class="bedtime-date">23 apr 2025 - 29 apr 2025</p>
+            <div class="row-flex" id="nap">
+              <div class="first-item">
+                <div class="yellowcirc"></div>
+                <div class="nap-tot">
+                  <p>Typical morning rise</p>
+                  <p>6:10 am</p>
+                </div>
+              </div>
+
+              <div class="second-item">
+                <div class="bluecirc"></div>
+                <div class="nap-avg">
+                  <p>Typical Bedtime</p>
+                  <p>8:12 pm</p>
+                </div>
+              </div>
+            </div>
+            <img class="bedtime-graph" src="/assets/BedtimeGraph.jpeg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!-- adjust sleep time  -->
+      <button class="adjust-sleep-time">
+        <span class="material-symbols-outlined" id="adjust">nights_stay</span>
+        <p class="adjust-text">Adjust Sleep Time</p>
+      </button>
+
+      <!-- nutrition data  -->
+      <div class="nutrition-intake">
+        <div class="intake-panel">
+          <div class="row-flex">
+            <h3>Nutrition Intake</h3>
+            <div class="toggles">
+              <button class="Day7">7D</button>
+              <button class="Day14">14D</button>
+              <button class="Day30">30D</button>
+            </div>
+          </div>
+          <div class="column-flex">
+            <p class="nutrition-date">23 apr 2025 - 29 apr 2025</p>
+            <div class="row-flex" id="nap">
+              <div class="first-item">
+                <div class="yellowcirc"></div>
+                <div class="nutrition-avg">
+                  <p>Nutrition intake avg</p>
+                  <p>87%</p>
+                </div>
+              </div>
+
+              <div class="second-item">
+                <div class="whitecirc"></div>
+                <div class="daily-avg">
+                  <p>Daily Intake avg</p>
+                  <p>93%</p>
+                </div>
+              </div>
+            </div>
+            <img
+              class="nutrition-intake-graph"
+              src="assets/NutritionIntake.jpeg"
+              alt="graph"
+            />
+
+            <!-- food recommendation  -->
+            <h3>Sustainable Food Recommendation</h3>
+            <div class="row-flex" id="recommend">
+              <div class="rec">
+                <img class="rec-img" src="assets/avocado.jpg" alt="" />
+                <p class="rec-txt">Avocado</p>
+              </div>
+              <div class="rec">
+                <img class="rec-img" src="assets/banana.jpeg" alt="" />
+                <p class="rec-txt">Banana</p>
+              </div>
+              <div class="rec">
+                <img class="rec-img" src="assets/pumpkin.webp" alt="" />
+                <p class="rec-txt">Pumpkin</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nutrition-list">
+          <h3>Nutrition List</h3>
+
+          <div class="nutrient" data-nutrient="iron">
+            <div class="top-row">
+              <span>Iron</span>
+              <span>0 / 11 mg</span>
+              <span>0%</span>
+            </div>
+            <div class="bar-container">
+              <div class="bar-fill" style="width: 0%"></div>
+            </div>
+          </div>
+          <div class="nutrient" data-nutrient="calcium">
+            <div class="top-row">
+              <span>Calcium</span>
+              <span>0 / 260 mg</span>
+              <span>0%</span>
+            </div>
+            <div class="bar-container">
+              <div class="bar-fill" style="width: 0%"></div>
+            </div>
+          </div>
+          <div class="nutrient" data-nutrient="vitaminD">
+            <div class="top-row">
+              <span>Vitamin D</span>
+              <span>0 / 10 mcg</span>
+              <span>0%</span>
+            </div>
+            <div class="bar-container">
+              <div class="bar-fill" style="width: 0%"></div>
+            </div>
+          </div>
+          <div class="nutrient" data-nutrient="vitaminA">
+            <div class="top-row">
+              <span>Vitamin A</span>
+              <span>0 / 500 mcg</span>
+              <span>0%</span>
+            </div>
+            <div class="bar-container">
+              <div class="bar-fill" style="width: 0%"></div>
+            </div>
+          </div>
+          <div class="nutrient" data-nutrient="vitaminC">
+            <div class="top-row">
+              <span>Vitamin C</span>
+              <span>0 / 50 mg</span>
+              <span>0%</span>
+            </div>
+            <div class="bar-container">
+              <div class="bar-fill" style="width: 0%"></div>
+            </div>
+          </div>
+          <div class="nutrient" data-nutrient="zinc">
+            <div class="top-row">
+              <span>Zinc</span>
+              <span>0 / 5 mg</span>
+              <span>0%</span>
+            </div>
+            <div class="bar-container">
+              <div class="bar-fill" style="width: 0%"></div>
+            </div>
+          </div>
+          <div class="nutrient" data-nutrient="protein">
+            <div class="top-row">
+              <span>Protein</span>
+              <span>0 / 11 g</span>
+              <span>0%</span>
+            </div>
+            <div class="bar-container">
+              <div class="bar-fill" style="width: 0%"></div>
+            </div>
+          </div>
+          <div class="nutrient" data-nutrient="carbohydrates">
+            <div class="top-row">
+              <span>Carbohydrates</span>
+              <span>0 / 95 g</span>
+              <span>0%</span>
+            </div>
+            <div class="bar-container">
+              <div class="bar-fill" style="width: 0%"></div>
+            </div>
+          </div>
+          <div class="nutrient" data-nutrient="fats">
+            <div class="top-row">
+              <span>Fats</span>
+              <span>0 / 11 mg</span>
+              <span>0%</span>
+            </div>
+            <div class="bar-container">
+              <div class="bar-fill" style="width: 0%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add nutrition  -->
+      <button class="add-nutrition">
+        <span class="material-symbols-outlined" id="nutrition">nutrition</span>
+        <p class="add-nutrition-text">Add nutrition</p>
+      </button>
     </div>
 
     <script src="home.js"></script>
-</body>
+  </body>
 </html>
