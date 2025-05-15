@@ -126,7 +126,7 @@ input[type="text"]::placeholder {
 .nutrition-information {
   background-color: rgb(64, 208, 167);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   margin-left: 50px;
   margin-top: 20px;
@@ -134,11 +134,17 @@ input[type="text"]::placeholder {
 }
 
 .nutrition-texts h2 {
-  display: grid;
+  display: flex;
   color: black;
   font-weight: 500;
   margin-left: 10px;
   margin-right: 100px;
+  margin: 20px;
+}
+
+.nutrition-numbers h2 {
+  display: flex;
+  font-weight: 500;
   margin: 20px;
 }
 
