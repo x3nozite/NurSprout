@@ -350,6 +350,16 @@ span.material-symbols-outlined#adjust, span.material-symbols-outlined#nutrition
 }
 
 /* Recommend  */
+.recommend
+{
+    margin: 5vh 0px 0px 0px;
+}
+
+.recommend h3
+{
+    text-align: center;
+}
+
 .row-flex#recommend
 {
     justify-content: left;
@@ -357,13 +367,15 @@ span.material-symbols-outlined#adjust, span.material-symbols-outlined#nutrition
 
 .rec
 {
-    margin: 10px 20px;
+    margin: auto;
+    margin-top: 2vh;
 }
 
 .rec-img
 {
     width: 50px;
     height: 45px;
+    border-radius: 10px;
 }
 
 .rec-txt
