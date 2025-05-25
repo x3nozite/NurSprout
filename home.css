@@ -7,18 +7,15 @@
 
 .container
 {
-    background-color: #162B62;
     max-width: 1200px;
     margin: 40px auto;
     padding-bottom: 30px;
-    border-radius: 8px;
 }
 
 /* header */
 
 .header
 {
-    background-color: #1B46B5;
     padding: 20px;
     border-radius: 8px;
     display: flex;
@@ -29,18 +26,20 @@
 {
     position: relative;
     bottom: 10px;
-    font-weight: 200;
-    font-size: 15px;
+    font-weight: 300;
+    font-size: 18px;
+    color: black;
 }
 
 .profile-picture
 {
+    position: relative;
+    bottom: 5px;
     background: #ccc;
     border-radius: 15px;
     padding: 45px;
     margin: auto 20px;
-    position: relative;
-    bottom: 45px;
+    align-items: center;
 }
 
 .sleep, .nutrition
@@ -88,7 +87,7 @@
 
 span.material-symbols-outlined
 {
-    color: white;
+    color: black;
     font-size: 15px;
     margin: 2px 10px;
 }
