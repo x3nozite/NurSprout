@@ -19,6 +19,7 @@
     --blue: rgba(113, 147, 211, 1);
     --font-poppins-regular: 'Poppins', sans-serif;
     --button-hover: rgba(221, 221, 221, 0.7);
+    --text-hover: 
 }
 
 
@@ -32,6 +33,7 @@ h1{
     font-family: var(--font-poppins-regular);
     font-size: 48px;
 }
+
 
 p{
     font-family: var(--font-poppins-regular);
@@ -175,3 +177,5 @@ li .nav-item:hover{
     text-decoration: none;
     padding: 4px;
 }
+
+

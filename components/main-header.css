@@ -33,8 +33,13 @@ img{
 }
 
 .menu-link{
-    gap: 16px;
+    display: inline-flex;
+    gap: 1rem;
 }
+.menu-link p{
+    font-size: 1em;
+}
+
 .menu-link a{
     padding: 10px 10px;
 }
@@ -70,7 +75,14 @@ img{
     color: var(--background);
 }
 
+.active{
+    color: var(--background);
+    border-bottom: 1px solid var(--background);
+}
 
+.active p{
+    color: var(--background);
+}
 
 
 

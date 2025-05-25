@@ -13,9 +13,9 @@ class Header extends HTMLElement{
                 <a href="../index.html">NurSprout</a>
             </div>
             <div class="menu-link">
-                <a href="../home.html">Home</a>
-                <a href="../nuri/nuri.html">NuRI</a>
-                <a href="../settings/Settings.html">Settings</a>
+                <a href="../home.html"><p>Home</p></a>
+                <a href="../nuri/nuri.html"><p>NuRI</p></a>
+                <a href="../settings/Settings.html"><p>Settings</p></a>
             </div>
             <div class="account-button">
                 <a href="/registration/register.html" id="sign-up">Sign Up</a>
@@ -23,6 +23,17 @@ class Header extends HTMLElement{
             </div>
         </div>
         `;
+
+        const currPage = window.location.pathname;
+        const allLinks = this.shadowRoot.querySelectorAll('.menu-link a');
+
+        allLinks.forEach(link => {
+            const hreflink = link.getAttribute('href');
+            const absolutePage = new URL(hreflink, window.location.origin).pathname;
+            if (currPage === absolutePage){
+                link.classList.add('active')
+            }
+        })
     }
 }
 
