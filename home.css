@@ -175,7 +175,7 @@ span#send
     flex-direction: row;
     width: 90%;
     margin: auto;
-    background-color: #1F3C85;
+    background-color: #265D3E;
     border-radius: 15px;
 }
 
@@ -224,12 +224,12 @@ span#send
 
 .Day7
 {
-    background-color: #7BA3FA;
+    background-color: #8AD4B9;
 }
 
 .Day7:hover, .Day14:hover, .Day30:hover
 {
-    background-color: #789dec96;
+    background-color: #6fb199;
 }
 
 .sleep-date, .nutrition-date
@@ -294,22 +294,49 @@ span#send
 
 /* adjust sleep button */
 
+.row-flex#sleep-add
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 3vh auto;
+}
+
+.row-flex#sleep-add h3
+{
+    font-size: 30px;
+    color: black;
+    font-weight: 500;
+}
+
 .adjust-sleep-time, .add-nutrition
 {
-    background-color: #1F3C85;
+    background-color: #72BA9F;
     border: none;
     padding: 10px 50px;
     border-radius: 10px;
-    margin: auto;
-    margin-top: 2%;
-    margin-bottom: 2%;
     display: flex;
     align-self: center;
 }
 
+.adjust-sleep-time p , .add-nutrition p
+{
+    font-size: 14px;
+    font-weight: 500;
+    color: #2F6E56;
+}
+
+.adjust-sleep-time .material-symbols-outlined , .add-nutrition .material-symbols-outlined
+{
+    font-size: 18px;
+    font-weight: 500;
+    color: #2F6E56;
+}
+
 .adjust-sleep-time:hover, .add-nutrition:hover
 {
-    background-color: #254492;
+    background-color: #61a18a;
 }
 
 span.material-symbols-outlined#adjust, span.material-symbols-outlined#nutrition
@@ -346,6 +373,22 @@ span.material-symbols-outlined#adjust, span.material-symbols-outlined#nutrition
 }
 
 /* nutrition list  */
+
+.row-flex#nutrition-add
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 3vh auto;
+}
+
+.row-flex#nutrition-add h3
+{
+    font-size: 30px;
+    color: black;
+    font-weight: 500;
+}
 
 .nutrition-list 
 {
