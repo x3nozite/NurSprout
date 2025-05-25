@@ -107,9 +107,9 @@ span.material-symbols-outlined
 
 .food-log-border
 {
-    width: 95%;
+    width: 90%;
     padding: 10px;
-    background-color: #1F3C85;
+    background-color: #72BA9F;
     margin: 20px auto;
     border-radius: 10px;
     display: flex;
@@ -120,7 +120,7 @@ span.material-symbols-outlined
 {
     width: 100%;
     height: 100%;
-    background-color: #162B62;
+    background-color: #265D3E;
     border-radius: 10px;
     display: flex;
 }
@@ -148,18 +148,18 @@ span.material-symbols-outlined
 .submit-log
 {
     height: 20%;
-    background-color: #85F042;
+    background-color: #40D0A7;
     border: none;
     border-radius: 6px;
-    padding: 5px;
-    margin: 0px 5px 5px 0px;
+    padding: 5px 2px 5px 2px;
+    margin: 0px 10px 5px 0px;
     position: relative;
     top: 88px;
 }
 
 .submit-log:hover
 {
-    background-color: #52b813;
+    background-color: #34b994;
 }
 
 span#send
