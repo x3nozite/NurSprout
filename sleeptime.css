@@ -6,7 +6,7 @@
     text-align: center;
     border-radius: 8px;
     color: white;
-    background-color: #162B62;
+    background-color: #265D3E;
 }
 
 #sleep{
@@ -16,7 +16,7 @@
     border-width: 12px;
     border-style: solid;
     border-radius: 8px;
-    border-color:#162B62;
+    border-color:#265D3E;
 }
 .adjustbox
 {
@@ -25,7 +25,7 @@
     margin: auto;
     height: 6.5rem;
     width: 24rem;
-    background-color: #1F3C85;
+    background-color: #265D3E;
     border-radius: 4px;
 }
 
@@ -37,7 +37,7 @@
   height: 5px;
   position: relative;
   top: 5px;
-  background-color: #162B62;
+  background-color: #2F6E56;
   border-radius: 2px;
 }
 .range-selected {
@@ -46,7 +46,7 @@
   right: 30%;
   position: absolute;
   border-radius: 5px;
-  background-color: #1b53c0;
+  background-color: #72BA9F;
 }
 .range-input {
   position: relative;
@@ -66,8 +66,8 @@
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  border: 3px solid #1b53c0;
-  background-color: #fff;
+  border: 3px solid #8AD4B9;
+  background-color: #8AD4B9;
   pointer-events: auto;
   -webkit-appearance: none;
 }
@@ -109,8 +109,9 @@
     width: 24rem;
     bottom:4rem;
     color: white;
-    background-color: #1F3C85;
+    background-color: #2F6E56;
     border-radius: 4px;
+    border-style: hidden;
     font-size: 1.2rem;
 }
 
