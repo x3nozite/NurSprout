@@ -14,9 +14,8 @@ h2{
 }
 
 h3{
-    font-size: 28px;
+    font-size: clamp(1rem, 2vw, 2rem);
 }
-
 p{
     font-size: 20px;
 }
@@ -68,6 +67,7 @@ a{
     column-gap: 2vw;
     padding: 16vh 4vw;
 }
+
 
 .how-card{
     background-color: var(--dark-green);

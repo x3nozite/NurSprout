@@ -7,18 +7,15 @@
 
 .container
 {
-    background-color: #162B62;
     max-width: 1200px;
     margin: 40px auto;
     padding-bottom: 30px;
-    border-radius: 8px;
 }
 
 /* header */
 
 .header
 {
-    background-color: #1B46B5;
     padding: 20px;
     border-radius: 8px;
     display: flex;
@@ -29,18 +26,20 @@
 {
     position: relative;
     bottom: 10px;
-    font-weight: 200;
-    font-size: 15px;
+    font-weight: 300;
+    font-size: 18px;
+    color: black;
 }
 
 .profile-picture
 {
+    position: relative;
+    bottom: 5px;
     background: #ccc;
     border-radius: 15px;
     padding: 45px;
     margin: auto 20px;
-    position: relative;
-    bottom: 45px;
+    align-items: center;
 }
 
 .sleep, .nutrition
@@ -88,7 +87,7 @@
 
 span.material-symbols-outlined
 {
-    color: white;
+    color: black;
     font-size: 15px;
     margin: 2px 10px;
 }
@@ -108,9 +107,9 @@ span.material-symbols-outlined
 
 .food-log-border
 {
-    width: 95%;
+    width: 90%;
     padding: 10px;
-    background-color: #1F3C85;
+    background-color: #72BA9F;
     margin: 20px auto;
     border-radius: 10px;
     display: flex;
@@ -121,7 +120,7 @@ span.material-symbols-outlined
 {
     width: 100%;
     height: 100%;
-    background-color: #162B62;
+    background-color: #265D3E;
     border-radius: 10px;
     display: flex;
 }
@@ -149,18 +148,18 @@ span.material-symbols-outlined
 .submit-log
 {
     height: 20%;
-    background-color: #85F042;
+    background-color: #40D0A7;
     border: none;
     border-radius: 6px;
-    padding: 5px;
-    margin: 0px 5px 5px 0px;
+    padding: 5px 2px 5px 2px;
+    margin: 0px 10px 5px 0px;
     position: relative;
     top: 88px;
 }
 
 .submit-log:hover
 {
-    background-color: #52b813;
+    background-color: #34b994;
 }
 
 span#send
@@ -176,7 +175,7 @@ span#send
     flex-direction: row;
     width: 90%;
     margin: auto;
-    background-color: #1F3C85;
+    background-color: #265D3E;
     border-radius: 15px;
 }
 
@@ -225,12 +224,12 @@ span#send
 
 .Day7
 {
-    background-color: #7BA3FA;
+    background-color: #8AD4B9;
 }
 
 .Day7:hover, .Day14:hover, .Day30:hover
 {
-    background-color: #789dec96;
+    background-color: #6fb199;
 }
 
 .sleep-date, .nutrition-date
@@ -295,22 +294,49 @@ span#send
 
 /* adjust sleep button */
 
+.row-flex#sleep-add
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 3vh auto;
+}
+
+.row-flex#sleep-add h3
+{
+    font-size: 30px;
+    color: black;
+    font-weight: 500;
+}
+
 .adjust-sleep-time, .add-nutrition
 {
-    background-color: #1F3C85;
+    background-color: #72BA9F;
     border: none;
     padding: 10px 50px;
     border-radius: 10px;
-    margin: auto;
-    margin-top: 2%;
-    margin-bottom: 2%;
     display: flex;
     align-self: center;
 }
 
+.adjust-sleep-time p , .add-nutrition p
+{
+    font-size: 14px;
+    font-weight: 500;
+    color: #2F6E56;
+}
+
+.adjust-sleep-time .material-symbols-outlined , .add-nutrition .material-symbols-outlined
+{
+    font-size: 18px;
+    font-weight: 500;
+    color: #2F6E56;
+}
+
 .adjust-sleep-time:hover, .add-nutrition:hover
 {
-    background-color: #254492;
+    background-color: #61a18a;
 }
 
 span.material-symbols-outlined#adjust, span.material-symbols-outlined#nutrition
@@ -324,6 +350,16 @@ span.material-symbols-outlined#adjust, span.material-symbols-outlined#nutrition
 }
 
 /* Recommend  */
+.recommend
+{
+    margin: 5vh 0px 0px 0px;
+}
+
+.recommend h3
+{
+    text-align: center;
+}
+
 .row-flex#recommend
 {
     justify-content: left;
@@ -331,13 +367,15 @@ span.material-symbols-outlined#adjust, span.material-symbols-outlined#nutrition
 
 .rec
 {
-    margin: 10px 20px;
+    margin: auto;
+    margin-top: 2vh;
 }
 
 .rec-img
 {
     width: 50px;
     height: 45px;
+    border-radius: 10px;
 }
 
 .rec-txt
@@ -347,6 +385,22 @@ span.material-symbols-outlined#adjust, span.material-symbols-outlined#nutrition
 }
 
 /* nutrition list  */
+
+.row-flex#nutrition-add
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 3vh auto;
+}
+
+.row-flex#nutrition-add h3
+{
+    font-size: 30px;
+    color: black;
+    font-weight: 500;
+}
 
 .nutrition-list 
 {
