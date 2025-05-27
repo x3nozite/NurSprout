@@ -25,19 +25,20 @@
     margin: auto;
     height: 6.5rem;
     width: 24rem;
-    background-color: #265D3E;
+    background-color: #40D0A7;
     border-radius: 4px;
 }
 
 #sleeptext
 {
     font-size: 1.2rem;
+    color: black;
 }
 .range-slider {
   height: 5px;
   position: relative;
   top: 5px;
-  background-color: #2F6E56;
+  background-color: #FFEDDE;
   border-radius: 2px;
 }
 .range-selected {
@@ -46,7 +47,7 @@
   right: 30%;
   position: absolute;
   border-radius: 5px;
-  background-color: #72BA9F;
+  background-color: #F1B33F;
 }
 .range-input {
   position: relative;
@@ -66,8 +67,8 @@
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  border: 3px solid #8AD4B9;
-  background-color: #8AD4B9;
+  border: 3px solid #137DF8;
+  background-color: #137DF8;
   pointer-events: auto;
   -webkit-appearance: none;
 }
@@ -98,18 +99,30 @@
   margin-right: 15px;
 }
 
+#return
+{
+  position: relative;
+  float: left;
+  background-image:url(/assets/ReturnSleep.png);
+  background-size: 100% 100%;
+  border-style: hidden;
+  height: 2rem;
+  width: 50px;
+  bottom: 2.8rem;
+}
 .button{
     margin: auto;
-    color: white;
+    color: black;
 }
 
 #confirm{
     position: relative;
     height: 4.2rem;
     width: 24rem;
+    right: 1rem;
     bottom:4rem;
-    color: white;
-    background-color: #2F6E56;
+    color: black;
+    background-color: #40D0A7;
     border-radius: 4px;
     border-style: hidden;
     font-size: 1.2rem;
