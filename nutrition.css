@@ -5,6 +5,17 @@
   display: flex;
 }
 
+.main-page-contaner
+{
+  display: flex;
+  flex-direction: row;
+}
+
+.search-container
+{
+  width: 100%;
+}
+
 #back-button {
   margin-top: 3px;
   display: inline-flex;
@@ -41,6 +52,7 @@ input[type="text"]::placeholder {
 }
 
 .item-container {
+  position: absolute;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -82,11 +94,11 @@ input[type="text"]::placeholder {
 /* bagian kanan */
 
 .main-container {
-  position: absolute;
   width: 850px;
   height: 34rem;
   left: 350px;
   top: 100px;
+  margin: auto;
 
   background: #a8e6cf;
 }
@@ -266,17 +278,20 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .note-input {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   margin-bottom: 1rem;
 }
 
 .note-input textarea {
+  display: block;
   border-radius: 10px;
   resize: none;
   border-color: white;
-  width: 700px;
-  margin-left: 0.5rem;
+  width: 95%;
+  margin: auto;
+  margin-top: -10px;
 }
+
 
 #note::placeholder {
   font-family: poppins, sans-serif;
