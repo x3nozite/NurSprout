@@ -126,6 +126,22 @@ span.material-symbols-outlined
     background-color: #61a18a;
 }
 
+/* drop down css doesn't work smh */
+/* #baby-dropdown .drop-option
+{
+    font-family: var(--font-poppins-regular);
+    font-weight: 600;
+    background-color: #72BA9F;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+#baby-dropdown .drop-option:hover {
+    background-color: #61a18a;
+    color: #FFFFFF;
+} */
+
 /* food log  */
 
 #food-log-container 
