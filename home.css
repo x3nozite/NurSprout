@@ -105,15 +105,31 @@ span.material-symbols-outlined
 
 /* food log  */
 
-.food-log-border
+#food-log-container 
 {
     width: 90%;
+    color: #18352a;
+    margin: 0px auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#food-log-container h3
+{
+    font-weight: 500;
+    font-size: 30px;
+    color: black;
+}
+
+.food-log-border
+{
+    width: 100%;
     padding: 10px;
     background-color: #72BA9F;
     margin: 20px auto;
     border-radius: 10px;
     display: flex;
-    flex-direction: row;
 }
 
 .food-log
