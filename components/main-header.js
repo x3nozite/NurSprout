@@ -35,6 +35,7 @@ class Header extends HTMLElement{
             </div>
             <div class="menu-link">
                 <a href="../home.html"><p>Home</p></a>
+                <a href="../collab/collab.html"><p>Collab</p></a>
                 <a href="../nuri/nuri.html"><p>NuRI</p></a>
                 <a href="../settings/Settings.html"><p>Settings</p></a>
             </div>
