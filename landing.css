@@ -134,6 +134,7 @@ a{
     margin: 8px 11vw;
     padding: 2rem;
     border-left: 2px solid black;
+    cursor: pointer;
 }
 
 .features p{
@@ -142,6 +143,7 @@ a{
 
 .selected{
     border-color: var(--white);
+    cursor: default;
 }
 
 #customer-testimony{

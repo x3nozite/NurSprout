@@ -59,6 +59,7 @@ a{
 #form-button:hover{
     background-color: #3b5c50;
     color: var(--white);
+    cursor: pointer;
 }
 
 #divider{
@@ -114,7 +115,7 @@ a{
     width: auto;
 }
 
-#email-error, #password-error{
+#email-error, #password-error, #username-error{
     font-size: 0.8rem;
     color: red;
 }
