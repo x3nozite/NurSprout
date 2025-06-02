@@ -1,4 +1,4 @@
-const accountButtons = `
+const regisLogin = `
 <div class="account-button">
     <a href="/registration/register.html" id="sign-up">Sign Up</a>
     <a href="/registration/login.html" id="login">Login</a>
@@ -16,7 +16,7 @@ let navbarRight;
 if(localStorage.getItem("login-status")){
     navbarRight = accountInfo;
 }else{
-    navbarRight = accountButtons;
+    navbarRight = regisLogin;
 }
 
 class Header extends HTMLElement{
