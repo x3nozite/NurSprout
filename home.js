@@ -1,3 +1,8 @@
+if(!localStorage.getItem("login-status")){
+  alert("You must be logged in to access the home page!");
+  window.location.href = "/registration/register.html";
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   function resetLocalStorage() {
     const nutrients = [
