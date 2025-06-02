@@ -103,6 +103,29 @@ span.material-symbols-outlined
     margin: 10px auto;
 }
 
+.baby-selector {
+    margin-left: auto;
+    position: relative;
+}
+
+#baby-dropdown {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    background-color: #72BA9F;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: var(--font-poppins-regular);
+    font-weight: 600;
+    margin: 0px;
+}
+
+#baby-dropdown:hover
+{
+    background-color: #61a18a;
+}
+
 /* food log  */
 
 #food-log-container 
