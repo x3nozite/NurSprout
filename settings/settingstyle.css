@@ -124,3 +124,7 @@ p{
     border-color: black;
     margin:auto;
 }
+
+#profile-picture{
+    object-fit: cover;
+}

@@ -1,3 +1,24 @@
+const accountButtons = `
+<div class="account-button">
+    <a href="/registration/register.html" id="sign-up">Sign Up</a>
+    <a href="/registration/login.html" id="login">Login</a>
+</div>
+`
+const username = localStorage.getItem("username");
+const accountInfo = `
+<div id="username-detail">
+    <img src="/assets/pfp2.jpg"><p id="username-bold">${username}</p>
+</div>
+`
+
+let navbarRight;
+
+if(localStorage.getItem("login-status")){
+    navbarRight = accountInfo;
+}else{
+    navbarRight = accountButtons;
+}
+
 class Header extends HTMLElement{
     constructor(){
         super();
@@ -17,10 +38,7 @@ class Header extends HTMLElement{
                 <a href="../nuri/nuri.html"><p>NuRI</p></a>
                 <a href="../settings/Settings.html"><p>Settings</p></a>
             </div>
-            <div class="account-button">
-                <a href="/registration/register.html" id="sign-up">Sign Up</a>
-                <a href="/registration/login.html" id="login">Login</a>
-            </div>
+            ${navbarRight}
         </div>
         `;
 

@@ -5,22 +5,14 @@ form.addEventListener("submit", function(e){
 
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
-    const username = document.getElementById("username").value;
 
-    let emailError = document.getElementById("email-error");
-    let passwordError = document.getElementById("password-error");
-    let usernameError = document.getElementById("username-error");
+    let emailError = document.getElementById("email-error")
+    let passwordError = document.getElementById("password-error")
 
     emailError.innerHTML = "";
     passwordError.innerHTML = "";
-    username.innerHTML = "";
 
     let errorFlag = false;
-
-    if(username == ""){
-        usernameError.innerHTML = "* Username is empty";
-        errorFlag = true;
-    }
 
     if(email == ""){
         emailError.innerHTML = "* Email is empty";
@@ -37,7 +29,6 @@ form.addEventListener("submit", function(e){
 
 
     if(!errorFlag){
-        localStorage.setItem("username", username);
         localStorage.setItem("login-status", true);
         location.href = "/home.html";
     }

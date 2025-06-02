@@ -84,5 +84,24 @@ img{
     color: var(--background);
 }
 
+#username-detail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
 
+#username-detail img{
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 100%;
+    object-fit: cover;
+}
 
+#username-detail p{
+    font-size: 1rem;
+}
+
+#username-bold{
+    font-weight: 600;
+}
