@@ -7,10 +7,50 @@
   flex-direction: column;
 }
 
+.buttons
+{
+  margin: 15px auto;
+  display: flex;
+  gap: 10px;
+}
+
+#back-button, #confirm-button
+{
+  font-family: var(--font-poppins-regular);
+  background-color: #72BA9F;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#back-button
+{
+  padding: 12px 15px;
+}
+
+#confirm-button
+{
+  padding: 12px 10vw;
+}
+
 .material-symbols-outlined#slider-icons
 {
   color: #265D3E;
-  
+  font-size: 25px;
+}
+
+#icons
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 3vh;
+}
+
+#slider
+{
+  margin: 10px 0 20px;
 }
 
 #card
@@ -24,7 +64,7 @@
   flex-direction: column;
 
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 }
 
 #title
