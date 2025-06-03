@@ -170,12 +170,12 @@ span.material-symbols-outlined
     gap: 10px;
 }
 
-.material-symbols-outlined#info-log
+.material-symbols-outlined#info
 {
     font-size: 25px;
 }
 
-.material-symbols-outlined#info-log:hover
+.material-symbols-outlined#info:hover
 {
     color: #686868;
 }
