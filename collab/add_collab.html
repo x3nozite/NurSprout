@@ -24,7 +24,7 @@
     <section id="collaborators">
         <div id="find-and-add">
             <input type="text" placeholder="Find a collaborator" id="find-collab">
-            <button id="add-button">Add people</button>
+            <a id="add-button" class="quicksand-regular">Add people</a>
         </div>
 
         <div id="collaborator-container">
@@ -63,5 +63,17 @@
             </div>
         </div>
     </section>
+
+    <section id="collab-overlay" class="">
+        <div id="add-collab-overlay">
+            <p>Add a collaborator</p>
+            <p>Search by username or email</p>
+            <input type="text" placeholder="Find people">
+            <span class="material-symbols-outlined" id="close-overlay">close</span>
+        </div>
+    </section>
+    
+
+    <script src="/collab/collaborator-scripts.js"></script>
 </body>
 </html>
