@@ -227,7 +227,7 @@ span.material-symbols-outlined
 .submit-log
 {
     height: 20%;
-    background-color: #40D0A7;
+    background-color: #72BA9F;
     border: none;
     border-radius: 6px;
     padding: 5px 2px 5px 2px;
@@ -238,13 +238,14 @@ span.material-symbols-outlined
 
 .submit-log:hover
 {
-    background-color: #34b994;
+    background-color: #64a58d;
 }
 
 span#send
 {
-    color: black;
+    color: white;
     font-size: 20px;
+    font-weight: 500;
 }
 
 /* sleep data and nutrition  */
