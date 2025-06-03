@@ -14,6 +14,73 @@
   gap: 10px;
 }
 
+/* Slider Track */
+.noUi-connect 
+{
+  background: #93ecd3; /* fill */
+}
+
+/* slider  */
+.noUi-target 
+{
+  background: #265D3E; 
+  border: none;
+  box-shadow: none;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.noUi-handle::before,
+.noUi-handle::after 
+{
+  display: none;      
+}
+
+/* Slider Handles */
+
+.noUi-handle 
+{
+  text-decoration: none;
+  background: #289C5A;
+  box-shadow: none;
+  top: -5px;
+  
+  border: none;
+  cursor: grab;
+  transition: background 0.3s;
+}
+
+/* Hover effect */
+.noUi-handle:hover {
+  background: #248b51;
+}
+
+/* Active dragging */
+.noUi-handle:active {
+  background: #1e7544;
+}
+
+/* Tooltip style */
+.noUi-tooltip {
+  font-family: var(--font-poppins-regular);
+  font-size: 15px;
+  font-weight: 500;
+
+  background: #93ECD3;
+  color: #265D3E;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 6px;
+}
+
+.noUi-horizontal .noUi-handle
+{
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  top: -5px;
+}
+
 #back-button, #confirm-button
 {
   font-family: var(--font-poppins-regular);
@@ -32,6 +99,7 @@
 #confirm-button
 {
   padding: 12px 10vw;
+  font-size: 15px;
 }
 
 .material-symbols-outlined#slider-icons
