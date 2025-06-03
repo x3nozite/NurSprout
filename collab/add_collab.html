@@ -7,21 +7,20 @@
     <link rel="stylesheet" href="/master.css">
     <link rel="stylesheet" href="/components/main-header.css"/>
     <link rel="stylesheet" href="/collab/collaborator.css">
+    <link rel="stylesheet" href="/collab/collab.css">
     <script defer src="/components/main-header.js"></script>
 </head>
 <body>
     <main-header></main-header>
 
     <section id="select-collab-type">
-        <div class="collab-option selected" id="collaborators-select">
-            <p>Collaborators</p>
-        </div>
-        <div class="collab-option" id="shared-with-me-select">
-            <p>Shared with me</p>
-        </div>
+        <ul>
+            <li point="collaborators" class="collab-option selected" id="collaborators-select">Collaborators</li>
+            <li point="sharedWithMe" class="collab-option" id="shared-with-me-select">Shared with me</li>
+        </ul>
     </section>
 
-    <section id="collaborators">
+    <section id="collaborators" class="onScreen">
         <div id="find-and-add">
             <input type="text" placeholder="Find a collaborator" id="find-collab">
             <a id="add-button" class="quicksand-regular">Add people</a>
@@ -72,6 +71,75 @@
             <span class="material-symbols-outlined" id="close-overlay">close</span>
         </div>
     </section>
+
+
+    <div class="collab-container" id="shared-with-me">
+        <div class="collab-account">
+            <div class="account">
+                <img src="/assets/customer1.jpg" alt="">
+                <span class="account-name">Insert Username Here</span>
+            </div>
+        </div>
+        <div class="collab-header">
+
+        </div>
+        <div class="collab-list">
+            <div class="collab-card">
+                <div class="collab-row1">
+                    <div class="baby-info">
+                        <img src="/assets/babyavatar.png" class="baby-icon">
+                        <div class="baby-stats">
+                            <span class="baby-name">Little Angel</span>
+                        </div>
+                    </div>
+                    <button class="more">
+                        <span class="material-symbols-outlined">more_vert</span>
+                    </button>
+                </div>
+                <div class="collab-row2">
+                    <button class="collab-button nutrition"><span class="material-symbols-outlined">add</span><p>Nutrition</p></button>
+                    <button class="collab-button sleep"><span class="material-symbols-outlined">add</span><p>Sleep</p></button>
+                    <button class="collab-button qlog"><span class="material-symbols-outlined">edit_note</span><p>Quick Log</p></button>
+                </div>
+            </div>
+            <div class="collab-card">
+                <div class="collab-row1">
+                    <div class="baby-info">
+                        <img src="/assets/babyavatar.png" class="baby-icon">
+                        <div class="baby-stats">
+                            <span class="baby-name">Little Angel</span>
+                        </div>
+                    </div>
+                    <button class="more">
+                        <span class="material-symbols-outlined">more_vert</span>
+                    </button>
+                </div>
+                <div class="collab-row2">
+                    <button class="collab-button nutrition"><span class="material-symbols-outlined">add</span><p>Nutrition</p></button>
+                    <button class="collab-button sleep"><span class="material-symbols-outlined">add</span><p>Sleep</p></button>
+                    <button class="collab-button qlog"><span class="material-symbols-outlined">edit_note</span><p>Quick Log</p></button>
+                </div>
+            </div>
+            <div class="collab-card">
+                <div class="collab-row1">
+                    <div class="baby-info">
+                        <img src="/assets/babyavatar.png" class="baby-icon">
+                        <div class="baby-stats">
+                            <span class="baby-name">Little Angel</span>
+                        </div>
+                    </div>
+                    <button class="more">
+                        <span class="material-symbols-outlined">more_vert</span>
+                    </button>
+                </div>
+                <div class="collab-row2">
+                    <button class="collab-button nutrition"><span class="material-symbols-outlined">add</span><p>Nutrition</p></button>
+                    <button class="collab-button sleep"><span class="material-symbols-outlined">add</span><p>Sleep</p></button>
+                    <button class="collab-button qlog"><span class="material-symbols-outlined">edit_note</span><p>Quick Log</p></button>
+                </div>
+            </div>
+        </div>
+    </div>
     
 
     <script src="/collab/collaborator-scripts.js"></script>
