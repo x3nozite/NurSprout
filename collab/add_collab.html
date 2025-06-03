@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/master.css">
+    <link rel="stylesheet" href="/components/main-header.css"/>
+    <link rel="stylesheet" href="/collab/collaborator.css">
+    <script defer src="/components/main-header.js"></script>
+</head>
+<body>
+    <main-header></main-header>
+
+    <section id="select-collab-type">
+        <div class="collab-option selected" id="collaborators-select">
+            <p>Collaborators</p>
+        </div>
+        <div class="collab-option" id="shared-with-me-select">
+            <p>Shared with me</p>
+        </div>
+    </section>
+
+    <section id="collaborators">
+        <div id="find-and-add">
+            <input type="text" placeholder="Find a collaborator" id="find-collab">
+            <button id="add-button">Add people</button>
+        </div>
+
+        <div id="collaborator-container">
+            <div id="collaborator-header">
+                <div id="select-all">
+                    <input type="checkbox">
+                    <p>Select all</p>
+                </div>
+            </div>
+            <div class="collaborator-card">
+                <input type="checkbox">
+                <img src="/assets/customer1.jpg" alt="">
+                <p>Collaborator 1</p>
+
+                <div class="remove-collaborator">
+                    <span class="material-symbols-outlined">delete</span>
+                </div>
+            </div>
+            <div class="collaborator-card">
+                <input type="checkbox">
+                <img src="/assets/customer2.jpg" alt="">
+                <p>Collaborator 2</p>
+
+                <div class="remove-collaborator">
+                    <span class="material-symbols-outlined">delete</span>
+                </div>
+            </div>
+            <div class="collaborator-card">
+                <input type="checkbox">
+                <img src="/assets/customer3.jpg" alt="">
+                <p>Collaborator 3</p>
+
+                <div class="remove-collaborator">
+                    <span class="material-symbols-outlined">delete</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
