@@ -1,0 +1,37 @@
+.container
+{
+  font-family: var(--font-poppins-regular);
+  width: 60%;
+  margin: 7vh auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.material-symbols-outlined#slider-icons
+{
+  color: #265D3E;
+  
+}
+
+#card
+{
+  padding: 3vh 10vw;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  background-color: #72BA9F;
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#title
+{
+  font-family: var(--font-poppins-regular);
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 6vh;
+}
