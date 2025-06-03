@@ -1,3 +1,8 @@
+if(!localStorage.getItem("login-status")){
+  alert("You must be logged in to access the collab page!");
+  window.location.href = "/registration/register.html";
+}
+
 const addPeople = document.getElementById("add-button");
 const collabOverlay = document.getElementById("collab-overlay");
 const closeOverlay = document.getElementById("close-overlay");

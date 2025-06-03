@@ -1,5 +1,5 @@
 if(!localStorage.getItem("login-status")){
-  alert("You must be logged in to access the home page!");
+  alert("You must be logged in to access the settings!");
   window.location.href = "/registration/register.html";
 }
 
