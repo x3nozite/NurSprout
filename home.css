@@ -584,6 +584,30 @@ span.material-symbols-outlined#adjust, span.material-symbols-outlined#nutrition
     font-family: var(--font-poppins-regular);
     margin: 0px;
 }
+  
+.tooltip-text#baby {
+    position: absolute;
+    top: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: #72BA9F;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    font-family: var(--font-poppins-regular);
+    margin: 0;
+}
+
+.tooltip-wrapper:hover .tooltip-text#baby
+{
+    opacity: 1;
+}
 
 .tooltip-wrapper:hover .tooltip-text {
     opacity: 1;
