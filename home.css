@@ -248,6 +248,13 @@ span#send
 }
 
 /* sleep data and nutrition  */
+#sleep-title
+{
+    display: flex;
+    flex-direction: row;
+    gap: 72px;
+}
+
 .sleep-container, .nutrition-intake
 {
     display: flex;
