@@ -252,14 +252,14 @@ span#send
 {
     display: flex;
     flex-direction: row;
-    gap: 72px;
+    gap: 10px;
 }
 
 #nutrition-title
 {
     display: flex;
     flex-direction: row;
-    gap: 25px
+    gap: 10px;
 }
 
 .sleep-container, .nutrition-intake
@@ -532,6 +532,36 @@ span.material-symbols-outlined#adjust, span.material-symbols-outlined#nutrition
     height: 100%;
     width: 0;
 }
+
+.tooltip-wrapper 
+{
+    position: relative;
+    display: inline-block;
+}
+  
+.tooltip-text {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+
+    background-color: #72BA9F;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    font-family: var(--font-poppins-regular);
+    margin: 0px;
+}
+
+.tooltip-wrapper:hover .tooltip-text {
+    opacity: 1;
+}
+  
 
 h1, h2, h3, p, li, span
 {
