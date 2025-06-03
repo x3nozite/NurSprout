@@ -3,35 +3,54 @@ body, html{
     height: 100dvh;
 }
 
-.collab-account{
-    display: flex;
-    flex-direction: row;
-}
-
-.account{
+.main-col-container{
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2rem clamp(3rem, 20vw, 25rem);
+    gap: 1rem;
 }
 
-.account img{
-    width: 10em;
-    height: 10em;
-    object-fit: cover;
-    border-radius: 100px;
+.collab-header{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
+
+#header-title{
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.col-header-row2{
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+#find-baby{
+    padding: 0.5rem;
+    flex: 2;
+}
+
+#manage{
+    width: fit-content;
+    border: none;
+    background-color: var(--darker-mint);
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+
 
 .collab-list{
     display: grid;
-    grid-template-columns: repeat(1, 500px);
-    padding: 0% 10rem;
-    gap: 1em;
+    grid-template-columns: repeat(1, 1fr);
     box-sizing: border-box;
     width: 100%;
-    height: 400px;
     justify-content: center;
-    overflow-y: auto;
-    overflow-x: hidden;
 }
 
 
@@ -40,19 +59,23 @@ body, html{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 2em 3.5em;
-    gap: 2em;
-    background-color: var(--dark-green);
-    border-radius: 16px;
-    color: var(--lavender);
-    box-shadow: 0px 2px var(--text-contrast);
+    padding: 1rem 2rem;
+    gap: 1rem;
+    background-color: var(--mint);
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.material-symbols-outlined.more-icon{
+    color: black;
 }
 
 .material-symbols-outlined{
-    color: var(--lavender);
+    color: white;
 }
 
 .more{
+    color: black;
     width: fit-content;
     height: fit-content;
     border-radius: 4px;
@@ -66,9 +89,10 @@ body, html{
 }
 
 .baby-name{
-    font-size: 1.5vw;
+    font-size: 1rem;
     font-weight: 500;
 }
+
 
 
 .baby-icon{
@@ -93,6 +117,7 @@ body, html{
 .collab-row2{
     display: inline-flex;
     justify-content: space-between;
+    gap: 2rem;
 }
 
 .collab-button{
@@ -100,10 +125,12 @@ body, html{
     align-items: center;
     gap: 1em;
     width: fit-content;
-    height: 3em;
-    padding: 0.5em 1em;
+    height: 2rem;
+    padding: 0.2rem 1rem;
     border: none;
     border-radius: 4px;
+    text-decoration: none;
+    flex: 1;
 }
 
 .collab-button:hover{
@@ -111,7 +138,7 @@ body, html{
 }
 
 .collab-button p{
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 500;
     color: #ffffff;
 }
