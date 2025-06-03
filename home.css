@@ -255,6 +255,13 @@ span#send
     gap: 72px;
 }
 
+#nutrition-title
+{
+    display: flex;
+    flex-direction: row;
+    gap: 25px
+}
+
 .sleep-container, .nutrition-intake
 {
     display: flex;
