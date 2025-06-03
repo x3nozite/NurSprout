@@ -16,7 +16,9 @@
 
 .header
 {
-    padding: 20px;
+    margin: auto;
+    width: 90%;
+    padding: 10px;
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -38,7 +40,7 @@
     background: #ccc;
     border-radius: 15px;
     padding: 45px;
-    margin: auto 20px;
+    margin: auto 0;
     align-items: center;
 }
 
