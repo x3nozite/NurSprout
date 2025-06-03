@@ -1,24 +1,27 @@
 if(!localStorage.getItem("login-status")){
-  alert("You must be logged in to access the home page!");
-  window.location.href = "/registration/register.html";
+    alert("You must be logged in to access the home page!");
+    window.location.href = "/registration/register.html";
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  function resetLocalStorage() {
-    const nutrients = [
-      "iron",
-      "vitaminC",
-      "calcium",
-      "vitaminA",
-      "zinc",
-      "protein",
-      "carbohydrates",
-      "fats",
-      "vitaminD",
-    ];
+    
+    const name = document.querySelector(".name");
+
+    function resetLocalStorage() {
+        const nutrients = [
+        "iron",
+        "vitaminC",
+        "calcium",
+        "vitaminA",
+        "zinc",
+        "protein",
+        "carbohydrates",
+        "fats",
+        "vitaminD",
+        ];
 
         nutrients.forEach(nutrient => {
-            localStorage.setItem(nutrient, "0");
+            localStorage.setItem(name.textContent + nutrient, "0");
         });
 
         updateNutritionList([]);
@@ -36,8 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
         let totalNutrition = {};
 
         nutrients.forEach(nutrient => {
-            const value = localStorage.getItem(nutrient);
-            if(localStorage.getItem(nutrient) !== null)
+            const value = localStorage.getItem(name.textContent + nutrient);
+            if(localStorage.getItem(name.textContent + nutrient) !== null)
             {
                 totalNutrition[nutrient] = parseFloat(value);
             }else{
@@ -57,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         nutrients.forEach(nutrient => {
-            localStorage.setItem(nutrient, totalNutrition[nutrient].toString());
+            localStorage.setItem(name.textContent + nutrient, totalNutrition[nutrient].toString());
         });
     
         const nutritionTargets = {
@@ -174,34 +177,35 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    updateNutritionList([]);
-  
-  
-      //handle set sleep schedule
+    
+    
+    //handle set sleep schedule
     const sleepScheduleButton = document.getElementById("adjust-sleep-time");
-
+    
     function linkToSleepSchedule() {
-      //link sendiri lah
+        //link sendiri lah
       window.location.href = "sleeptime.html";
     }
     sleepScheduleButton.addEventListener("click", linkToSleepSchedule);
 
     //handle set nutrition button
     const addNutritionButton = document.getElementById("add-nutrition");
-
+    
     function linkToAddNutrition() {
-      window.location.href = "nutrition.html";
+        window.location.href = "nutrition.html";
     }
     addNutritionButton.addEventListener("click", linkToAddNutrition);
-
+    
     //handle dropdown name
-    const name = document.querySelector(".name");
     const dropdown = document.querySelector("#baby-dropdown");
-
+    
     name.textContent = dropdown.options[dropdown.selectedIndex].text;
-
+    
     dropdown.addEventListener("change", () => 
     {
         name.textContent = dropdown.options[dropdown.selectedIndex].text;
+        updateNutritionList([]);
     });
+    
+    updateNutritionList([]);
 });
