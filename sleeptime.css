@@ -103,7 +103,7 @@
 
 #confirm-button
 {
-  color: #265D3E;
+  color: #fff;
   font-weight: 600;
   padding: 12px 10vw;
   font-size: 15px;
@@ -122,7 +122,7 @@
 
 .material-symbols-outlined#back
 {
-  color: #265D3E;
+  color: #fff;
   font-weight: 600;
 }
 
@@ -158,6 +158,6 @@
   font-family: var(--font-poppins-regular);
   font-size: 18px;
   font-weight: 600;
-  color: #265D3E;
+  color: #fff;
   margin-bottom: 6vh;
 }
