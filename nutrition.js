@@ -1,3 +1,5 @@
+// Serving size input value
+
 const slider = document.getElementById("serving-slider");
 const output = document.getElementById("value");
 
@@ -5,11 +7,12 @@ slider.oninput = function () {
   output.textContent = this.value;
 };
 
+//Ensuring hour input stays in range on input and blur
+
 const hourInput = document.getElementById("hour");
 const minuteInput = document.getElementById("minute");
 const meridiemElem = document.getElementById("meridiem");
 
-//Ensuring hour input stays in range on input and blur
 function validateHour() {
   let val = parseInt(hourInput.value, 10);
   if (isNaN(val) || val < 1) val = 1;
@@ -57,12 +60,41 @@ window.addEventListener("load", () => {
   validateMinute();
 });
 
-// Handle Confirm Button
+//Initialisation of banana nutrient
+
+const bananaNutrition = {
+  carbs: 12,
+  protein: 0.6,
+  fat: 0.2,
+};
+
+// Update the nutrition data
+
+function addNutrition() {
+  const servingSizeValue = slider.value;
+
+  return confirm(
+    `Are you sure the data is correct for ${servingSizeValue} serving(s)?`
+  );
+}
 
 const confirmationButton = document.getElementById("confirm-button");
 
-function linkToHome() {
-  window.location.href = "home.html";
-}
+confirmationButton.addEventListener("click", function (event) {
+  event.preventDefault();
 
-confirmationButton.addEventListener("click", linkToHome);
+  const servingSizeValue = slider.value;
+
+  var totalCarbs = servingSizeValue * bananaNutrition.carbs;
+  var totalProtein = servingSizeValue * bananaNutrition.protein;
+  var totalFat = servingSizeValue * bananaNutrition.fat;
+
+  if (addNutrition()) {
+    localStorage.setItem("Little Angelcarbohydrates", totalCarbs);
+    localStorage.setItem("Little Angelprotein", totalProtein);
+    localStorage.setItem("Little Angelfats", totalFat);
+
+    alert("Thank you! Nutrition Saved.");
+    window.location.href = "/home.html";
+  }
+});

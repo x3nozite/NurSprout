@@ -5,14 +5,12 @@
   display: flex;
 }
 
-.main-page-contaner
-{
+.main-page-contaner {
   display: flex;
   flex-direction: row;
 }
 
-.search-container
-{
+.search-container {
   width: 100%;
 }
 
@@ -23,7 +21,7 @@
   text-align: center;
   width: 38px;
   height: 38px;
-  background-color: #40d0a7;
+  background-color: rgb(38, 93, 62);
   border-radius: 10px;
 }
 
@@ -62,7 +60,7 @@ input[type="text"]::placeholder {
   display: flex;
   align-items: center;
   gap: 12px;
-  background-color: rgba(195, 228, 207);
+  background-color: rgb(38, 93, 62);
   padding: 10px 15px;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
@@ -88,7 +86,7 @@ input[type="text"]::placeholder {
   margin: 0;
   font-size: 18px;
   font-weight: 500;
-  color: #333;
+  color: black;
 }
 
 /* bagian kanan */
@@ -99,8 +97,9 @@ input[type="text"]::placeholder {
   left: 350px;
   top: 100px;
   margin: auto;
+  border-radius: 15px;
 
-  background: #C3E4CF;
+  background: rgb(38, 93, 62);
 }
 
 .food-header {
@@ -154,7 +153,7 @@ input[type="text"]::placeholder {
 }
 
 .nutrition-information {
-  background-color: rgb(64, 208, 167);
+  background-color: rgb(22, 134, 72);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -184,7 +183,7 @@ input[type="text"]::placeholder {
 }
 
 .time {
-  background-color: rgb(64, 208, 167);
+  background-color: rgb(22, 134, 72);
   border-radius: 10px;
   display: flex;
   gap: 1rem;
@@ -238,13 +237,13 @@ input[type="number"]::-webkit-outer-spin-button {
 
 #meridiem:hover,
 #meridiem:focus {
-  background-color: rgb(195, 228, 207);
+  background-color: rgb(22, 134, 72);
   color: black;
   outline: none;
 }
 
 .serving-size {
-  background-color: rgb(64, 208, 167);
+  background-color: rgb(22, 134, 72);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -262,7 +261,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .note {
-  background-color: rgb(64, 208, 167);
+  background-color: rgb(22, 134, 72);
   margin-top: 1rem;
   margin-left: 6%;
   margin-right: 55px;
@@ -292,7 +291,6 @@ input[type="number"]::-webkit-outer-spin-button {
   margin-top: -10px;
 }
 
-
 #note::placeholder {
   font-family: poppins, sans-serif;
 }
@@ -304,7 +302,7 @@ input[type="number"]::-webkit-outer-spin-button {
   margin-left: 40%;
   border-radius: 10px;
   border: none;
-  background-color: #40d0a7;
+  background-color: rgb(22, 134, 72);
 }
 
 #confirm-button-text {
