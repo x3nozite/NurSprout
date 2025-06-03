@@ -282,11 +282,6 @@ span#send
     background-color: #8AD4B9;
 }
 
-.Day7:hover, .Day14:hover, .Day30:hover
-{
-    background-color: #6fb199;
-}
-
 .sleep-date, .nutrition-date
 {
     font-size: 13px;
