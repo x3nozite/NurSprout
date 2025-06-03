@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NurSprout</title>
     <script defer src="components/main-header.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.js"></script>
     <link rel="stylesheet" href="master.css" />
     <link rel="stylesheet" href="components/main-header.css" />
     <link rel="stylesheet" href="sleeptime.css" />
@@ -12,46 +14,27 @@
 <body>
     <main-header></main-header>
     <div class="container">
-       
-        <div class="box"> 
-            <img id="sleep" src="/assets/green.jpeg">
-            <div class="adjustbox">
-                <h2 id="sleeptext">Adjust Baby Sleep Time</h2>
-
-                <div class="range">
-                    <div class="range-slider">
-                        <span class="range-selected"></span>
-                    </div>
-                    <div class="range-input">
-                        <input type="range" class="min" min="0" max="2400" value="600" step="100">
-                        <input type="range" class="max" min="0" max="2400" value="1200" step="100">
-                    </div>
-                    
-                    <div class="range-price">
-                        <label for="min">Start</label>
-                        <input type="number" name="min" value="600">
-                        <label for="max">End</label>
-                        <input type="number" name="max" value="1200">
-                    </div>
-                </div>
-
+        <div id="card">
+            <div id="title">Adjust Your Baby Sleep time</div>
+            <div id="icons">
+                <span class="material-symbols-outlined" id="slider-icons">sunny</span>
+                <span class="material-symbols-outlined" id="slider-icons">nights_stay</span>
+                <span class="material-symbols-outlined" id="slider-icons">sunny</span>
             </div>
-            <div class="button">
-                <div class="return">
-                    <a href="home.html">
-                        <button id="return" class="quicksand-bold"></button>
-                    </a>
-                </div>
-                <a href="home.html">
-                    <button id="confirm" class="quicksand-bold">
-                        Confirm
-                     </button>
-                </a>
+            <div id="time-details">
+                <p>5pm</p>
+                <p>1am</p>
+                <p>10am</p>
             </div>
+            <div id="slider"></div>
         </div>
 
-        
+        <div class="buttons">
+            <button id="back-button"><span class="material-symbols-outlined" id="back">keyboard_backspace</span></button>
+            <button id="confirm-button">Confirm</button>
+        </div>
     </div>
+    
     <script src="sleeptime.js"></script>
 </body>
 </html>
