@@ -64,7 +64,7 @@
 .noUi-tooltip {
   font-family: var(--font-poppins-regular);
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 600;
 
   background: #93ECD3;
   color: #265D3E;
@@ -98,6 +98,8 @@
 
 #confirm-button
 {
+  color: #265D3E;
+  font-weight: 600;
   padding: 12px 10vw;
   font-size: 15px;
 }
@@ -106,6 +108,12 @@
 {
   color: #265D3E;
   font-size: 25px;
+}
+
+.material-symbols-outlined#back
+{
+  color: #265D3E;
+  font-weight: 600;
 }
 
 #icons
@@ -139,7 +147,7 @@
 {
   font-family: var(--font-poppins-regular);
   font-size: 18px;
-  font-weight: 500;
-  color: #000000;
+  font-weight: 600;
+  color: #265D3E;
   margin-bottom: 6vh;
 }
