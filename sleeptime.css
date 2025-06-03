@@ -96,12 +96,22 @@
   padding: 12px 15px;
 }
 
+#back-button:hover
+{
+  background-color: #619e89;
+}
+
 #confirm-button
 {
   color: #265D3E;
   font-weight: 600;
   padding: 12px 10vw;
   font-size: 15px;
+}
+
+#confirm-button:hover
+{
+  background-color: #619e89;
 }
 
 .material-symbols-outlined#slider-icons
