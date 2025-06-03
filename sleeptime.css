@@ -131,7 +131,21 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 3vh;
+}
+
+#time-details
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1vh;
+}
+
+#time-details p
+{
+  color: #265D3E;
+  font-size: 10px;
+  font-weight: 600;
 }
 
 #slider
