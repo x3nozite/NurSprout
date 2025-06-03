@@ -108,12 +108,16 @@ span.material-symbols-outlined
 .baby-selector {
     margin-left: auto;
     position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
 
-#baby-dropdown {
+#baby-dropdown 
+{
     padding: 6px 10px;
     border-radius: 6px;
-    border: 1px solid #ccc;
+    border: none;
     font-size: 14px;
     background-color: #72BA9F;
     color: #FFFFFF;
@@ -126,6 +130,28 @@ span.material-symbols-outlined
 #baby-dropdown:hover
 {
     background-color: #61a18a;
+}
+
+#add-baby
+{   
+    background-color: #72BA9F;
+    padding: 6px 3px;
+    border-radius: 6px;
+    align-items: center;
+    cursor: pointer;
+    margin: auto;
+}
+
+#add-baby:hover
+{
+    background-color: #61a18a;
+}
+
+.material-symbols-outlined#add
+{
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 600;
 }
 
 /* drop down css doesn't work smh */
