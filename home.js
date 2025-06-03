@@ -193,4 +193,15 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "nutrition.html";
     }
     addNutritionButton.addEventListener("click", linkToAddNutrition);
+
+    //handle dropdown name
+    const name = document.querySelector(".name");
+    const dropdown = document.querySelector("#baby-dropdown");
+
+    name.textContent = dropdown.options[dropdown.selectedIndex].text;
+
+    dropdown.addEventListener("change", () => 
+    {
+        name.textContent = dropdown.options[dropdown.selectedIndex].text;
+    });
 });
