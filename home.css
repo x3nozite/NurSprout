@@ -163,6 +163,28 @@ span.material-symbols-outlined
     color: black;
 }
 
+#quick-log
+{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.material-symbols-outlined#info-log
+{
+    font-size: 25px;
+}
+
+.material-symbols-outlined#info-log:hover
+{
+    color: #686868;
+}
+
+.info-button
+{
+    font-size: 30px;
+}
+
 .food-log-border
 {
     width: 100%;
