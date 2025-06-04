@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if(!validFood.includes(match[1].toLowerCase()))
             {
-                alert(match[1] + "is not in the list!")
+                alert(match[1] + " is not in the list!")
                 valid = false;
                 return;
             }
